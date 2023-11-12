@@ -1,0 +1,268 @@
+.navbar-container {
+  height: 90px;
+  width: 100vw;
+  background: #1F2029;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0 -3px 8px #000000;
+ 
+}
+.navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.nav-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container-transparent {
+  height: 90px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1F2029;
+ 
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+}
+
+.nav-logo {
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  flex-grow: 1;
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: all ease-in-out 250ms;
+  text-shadow: -1px 1px 0px rgb(0 0 0 / 30%), -2px 4px 2px rgb(0 0 0 / 10%);
+  font-family: proxima-nova;
+}
+.link:hover{
+  color: var(--blue-ciel);
+  text-decoration: none;
+}
+
+.link-moved {
+
+  text-decoration: none;
+  position: relative;
+  transition: all ease-in-out 250ms;
+  font-weight: 400;
+  font-family: proxima-nova;
+  text-shadow: -1.2px 1.2px 0px rgb(0 0 0 / 30%), -2px 4px 2px rgb(0 0 0 / 10%);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.09rem;
+  width: 0%;
+  background:   linear-gradient(
+    18deg,
+    rgba(31, 33, 45, 1) 0%,
+    rgba(46, 163, 221, 1) 61%
+  );;
+  bottom: -0.75rem;
+  transition: all ease-in-out 250ms;
+}
+
+.link:hover::after {
+  width: 100%;
+  background: linear-gradient(
+    18deg,
+    rgba(31, 33, 45, 1) 0%,
+    rgba(46, 163, 221, 1) 61%
+  );
+}
+
+
+
+.link-moved::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.09rem;
+  width: 0%;
+
+  bottom: -0.75rem;
+  transition: all ease-in-out 250ms;
+}
+
+.link-moved:hover::after {
+  width: 100%;
+}
+
+
+.fa-code {
+  margin-left: 1rem;
+}
+
+.navigation-item {
+  padding: 5px 20px;
+  color: var(--blue-ciel);
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.navigation-item-moved {
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.nav-icon {
+  display: none;
+}
+.nav-icon-moved {
+  display: none;
+}
+
+.logo {
+  display: flex;
+width: 15%;
+  margin-left: 10%;
+ 
+}
+
+
+
+.profileIcon{
+  width: 40px;
+}
+@media screen and (max-width: 1000px) {
+
+   .navbar-container-transparent {
+    background: #1F2029;
+    box-shadow: 0 -3px 8px #000000; 
+    
+  } 
+  .logo{
+    margin-left: calc(5% - 10px);
+
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    background: rgb(31, 33,45 , 0.5);
+    width: 100%;
+    margin: initial;
+    padding: initial;
+    position: absolute;
+    top:90px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    overflow: auto;
+  }
+
+  .nav-menu.active {
+    background: rgb(31, 33,45 , 0.5);
+    right: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    width: 50vw;
+    height: 100vh;
+    margin-right: auto;
+    line-height: 5rem;
+  }
+  .navigation-item .active {
+    border: none;
+  }
+  .link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all ease-in-out 250ms;
+  }
+
+  .nav-icon {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  .nav-icon-moved {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .link-moved::after{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+
+  .nav-menu.active {
+    background: rgb(31, 33,45 , 0.7);
+    right: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    margin-right: auto;
+    line-height: 5rem;
+  }
+  .main-container {
+    width: 100vw !important;
+
+  }
+}
+
+.nav-icon-moved svg {
+  color: #fff !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.logo{
+  width: 15%;
+}
+.nav-icon svg {
+  color: var(--blue-marine) !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+#root{
+  width:100%;
+  overflow-x: hidden;
+}
