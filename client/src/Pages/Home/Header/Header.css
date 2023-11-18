@@ -1,0 +1,84 @@
+.container0 {
+    background-image: url(./../../../Assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -95px;
+    z-index: 1;
+    height: 740px;
+    width: 100%;
+}
+
+.container1 {
+    background: rgba(31, 33, 45, 0.44);
+    backdrop-filter: blur(5px);
+    z-index: 20;
+    height: 100vh;
+    width: 100%;
+}
+
+.logo1 {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 5%;
+}
+
+.line {
+    background-color: #9fc8d4;
+    height: 5px;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: -5%;
+}
+
+.slogan {
+    color: #9fc8d4;
+    margin-left: 69%;
+    margin-top: 1%;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.logo2 {
+    width: 10%;
+    height: auto;
+    margin-left: 85%;
+    margin-top: -7%;
+}
+
+.subscribe {
+    border: 3px solid #E0DED2;
+    color: #E0DED2;
+    text-align: center;
+    font-family: proxima-nova;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    background-color: transparent;
+    padding: 10px 70px;
+    margin-left: 38%;
+    margin-top: 4%;
+}
+.date-container{
+    display: flex;
+    gap:1%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.icon, .utica, .date , .th, .jan{
+   font-size: 40px;
+}
+
+.icon, .date, .th{
+    color:#9fc8d4;
+}
+
+.th{
+    margin-top: -1%;
+}
+
+.date,.jan,.utica{
+    color:#E0DED2;
+}

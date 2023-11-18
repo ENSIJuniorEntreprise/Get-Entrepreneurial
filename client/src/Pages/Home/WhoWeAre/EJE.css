@@ -1,0 +1,130 @@
+.EJE-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #E0DED2;
+    
+
+}
+.EJE {
+    background-color: #E0DED2;
+    display: flex;
+    gap:7%;
+
+}
+
+.title {
+    color: #1F212D;
+    text-align: center;
+    font-family: proxima-nova;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9px;
+}
+
+.subtitle {
+    color: #1F212D;
+    font-family: proxima-nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.line-sub {
+    width: 260px;
+    height: 4px;
+    background-color: #FE9900;
+}
+
+.logoo{
+    width: 9%;
+    margin-top: -25px;
+    margin-left: 6%;
+}
+
+.whoWeAre-section1{
+    display: grid;
+    grid-template-columns: 55% 35%;
+    padding-right: 2.5%;
+    padding-left: 5%;
+    margin-top: 30px;
+    gap:5%
+
+}
+.whoWeAre-section1 .part1{
+    color: #1F212D;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 6px;
+}
+
+.container-chiffre{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #FE9900;
+    align-items: center;
+}
+.chiffre{
+    display: flex;
+    color: #FE9900;
+text-align: center;
+font-size: 80px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 17.5px;
+align-items: center;
+position:relative
+}
+
+.chiffre::after {
+    content: "";
+    display: block;
+    height: 4px; 
+    width: 70%;
+    background-color: #FE9900;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+  }
+
+.whoWeAre-section1 .part2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:10%;
+
+}
+
+.label{
+    color: #1F212D;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 8px;
+    margin-top: 5%;
+}
+.ch1{
+    border-top-left-radius: 25px;
+}
+.ch2{
+    border-top-right-radius: 25px;
+}
+.ch3{
+    border-bottom-left-radius: 25px;
+}
+.ch4{
+    border-bottom-right-radius: 25px;
+}

@@ -1,0 +1,188 @@
+.event-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #E0DED2;
+}
+
+.title {
+    color: #1F212D;
+    text-align: center;
+    font-family: proxima-nova;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9px;
+}
+
+.subtitle {
+    color: #1F212D;
+    font-family: proxima-nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    justify-content: center;
+
+}
+
+.line-sub {
+    width: 260px;
+    height: 4px;
+    background-color: #FE9900;
+}
+
+.aboutTheEvent {
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    margin-top: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.icons {
+    height: 80px;
+    width: auto;
+}
+
+.icon-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon-title div {
+    color: #1F212D;
+    font-family: proxima-nova;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6px;
+}
+
+.para {
+    color: #1F212D;
+    font-family: proxima-nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 5px;
+}
+
+.time-remaining-title {
+
+    color: #1F212D;
+    font-family: proxima-nova;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9px;
+    margin-left: 3%;
+}
+
+.time-line {
+    display: flex;
+    align-items: center;
+
+}
+
+.counter-container {
+    position: relative;
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.counter-container::before,
+.counter-container::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #FE9900;
+}
+
+.counter-container::before {
+    left: 0;
+    bottom: 0;
+    height: 90%;
+}
+
+.counter-container::after {
+    right: 0;
+    top: 9%;
+    height: 70%;
+}
+
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap:4%;
+}
+
+.timer-container {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    gap: 2%;
+}
+
+.line1 {
+    height: 4px;
+    width: 52%;
+    background-color: #FE9900;
+    margin-left: auto;
+}
+
+.line2 {
+    height: 4px;
+    width: 52%;
+    background-color: #FE9900;
+
+}
+
+.time1 {
+    color: #1F212D;
+    font-family: proxima-nova;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 24px;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+
+}
+
+.time2 {
+    color: #1F212D;
+    font-family: proxima-nova;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 7px;
+}
+
+.two-points {
+    color: #FE9900;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 24px;
+}
