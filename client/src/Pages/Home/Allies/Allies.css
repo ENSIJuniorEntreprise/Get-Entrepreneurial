@@ -1,0 +1,75 @@
+.allies {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #E0DED2;
+}
+
+.allies .title1 {
+    color: #1F212D;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9px;
+}
+
+.allies .subtitle1 {
+    color: #1F212D;
+    font-family: proxima-nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    justify-content: center;
+
+}
+
+.allies .line-sub {
+    width: 260px;
+    height: 4px;
+    background-color: #FE9900;
+}
+.containerPartenaires{
+    width: 90%;
+    margin:0 auto;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    display: none;
+    width: 2px !important;
+}
+
+.item {
+    height: 300px;
+    position: relative;
+}
+
+.image {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slick-dots li button:before
+{
+    font-size: 15px !important;
+    opacity: 1 !important;
+    color: #1F212D !important;
+
+}
+.slick-dots li.slick-active button:before {
+    color: #FE9900 !important;
+}
+
+slick-arrow slick-next{
+    display: none !important;
+}

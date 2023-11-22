@@ -128,3 +128,62 @@ position:relative
 .ch4{
     border-bottom-right-radius: 25px;
 }
+
+
+/* Slider section */
+.containerStyles{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.containerStyles::before,
+.containerStyles::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #FE9900;
+}
+
+.containerStyles::before {
+    left: -4.5%;
+    top:-7%;
+    height: 40%;
+}
+
+.containerStyles::after {
+    right: -4.5%;
+    bottom: -7%;
+    height: 40%;
+}
+
+/* horizontal */
+.containerStyles0{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.containerStyles0::before,
+.containerStyles0::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #FE9900;
+}
+
+.containerStyles0::before {
+    left: 6.5%;
+    top:-7%;
+    width: 20%;
+}
+
+.containerStyles0::after {
+    right: 6.5%;
+    bottom: -7%;
+    width: 20%;
+}
+

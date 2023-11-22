@@ -2,8 +2,16 @@ import React from "react";
 import './EJE.css';
 import logoo from "./../../../Assets/Logoo.png"
 import Chiffre from './chiffre'
+import ImageSlider from "./ImageSlider";
+import img1 from "./../../../Assets/slider1.jpg"
+import img2 from "./../../../Assets/slider2.jpg"
+import img3 from "./../../../Assets/slider3.jpg"
+
 
 export default function EJE() {
+  let slides =[img1,img2,img3]
+
+  
   return (
     <div className="EJE-container">
       <div className="EJE">
@@ -48,6 +56,12 @@ volupmolestiae quas vel sint vjvv commodi repudiandae nvgy khvj nconsequuntur vo
 
         </div>
       </div>
+      <div className="containerStyles0">
+      <div className="containerStyles">
+        <ImageSlider slides={slides} />
+      </div>
+      </div>
+
 
     </div>
   );
