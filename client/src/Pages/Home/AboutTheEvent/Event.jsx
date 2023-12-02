@@ -60,7 +60,7 @@ export default function Event() {
             <img src={icon1} className="icons" />
             <div>Values</div>
           </div>
-          <div className="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div className="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
         </div>
 
         <div className="thematic">
@@ -68,7 +68,7 @@ export default function Event() {
             <img src={icon2} className="icons" />
             <div>thematic</div>
           </div>
-          <div className="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div className="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
         </div>
 
         <div className="info">
@@ -76,7 +76,7 @@ export default function Event() {
             <img src={icon3} className="icons" />
             <div>Information</div>
           </div>
-          <div className="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div className="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
         </div>
 
       </div>
@@ -90,13 +90,13 @@ export default function Event() {
           <div className="timer-container">
             <div className="timer">
               <div className='time1'>{days}</div>
-              <span className='time2'>Jours</span>
+              <span className='time2'>Days</span>
             </div>
             <div className='two-points'>:</div>
             {showSemicolon ? <div className="semicolon">:</div> : null}
             <div className="timer">
               <div className='time1'>{hours}</div>
-              <span className='time2'>Heures</span>
+              <span className='time2'>Hours</span>
             </div>
             <div className='two-points'>:</div>
             {showSemicolon ? <div className="semicolon">:</div> : null}
@@ -108,7 +108,7 @@ export default function Event() {
             {showSemicolon ? <div className="semicolon">:</div> : null}
             <div className="timer">
               <div className='time1'>{seconds}</div>
-              <span className='time2'>Secondes</span>
+              <span className='time2'>Seconds</span>
             </div>
           
           </div>

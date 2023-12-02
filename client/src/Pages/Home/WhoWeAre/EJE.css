@@ -54,9 +54,9 @@
     display: grid;
     grid-template-columns: 55% 35%;
     padding-right: 2.5%;
-    padding-left: 5%;
+    padding-left: 3%;
     margin-top: 30px;
-    gap:5%
+    gap:4%
 
 }
 .whoWeAre-section1 .part1{
@@ -109,7 +109,7 @@ position:relative
 .label{
     color: #1F212D;
     font-family: Montserrat;
-    font-size: 32px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;

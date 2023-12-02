@@ -25,7 +25,7 @@ export default function Articles() {
             <img src={article.img} alt={article.title} />
             <div className="date">{article.date}</div>
             <div className="title">{article.title}</div>
-            <button>Check Details</button>
+            <button className="checkbtn">Check Details</button>
           </div>
         ))}
       </div>

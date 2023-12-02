@@ -103,4 +103,13 @@
   .article:hover {
     transform: scale(1.07); 
   }
-  
+.checkbtn{
+  color: #1F212D;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 3.5px;
+}

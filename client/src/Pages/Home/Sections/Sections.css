@@ -4,7 +4,8 @@
 }
 
 .title1 {
-    color: #E0DED2;;
+    color: #E0DED2;
+    ;
     text-align: center;
     font-family: proxima-nova;
     font-size: 36px;
@@ -15,7 +16,8 @@
 }
 
 .subtitle1 {
-    color: #E0DED2;;
+    color: #E0DED2;
+    ;
     font-family: proxima-nova;
     font-size: 20px;
     font-style: normal;
@@ -35,75 +37,89 @@
     background-color: #FE9900;
 }
 
-.orange{
-    color:#FE9900;
+.orange {
+    color: #FE9900;
 }
-.section-title{
+
+.section-title {
     color: #E0DED2;
-font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 8px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 8px;
+    text-align: left;
 }
 
-.para1{
+.para1 {
     color: #E0DED2;
-
-font-size: 20px;
-font-style: normal;
-font-weight: 300;
-line-height: 156.4%; /* 31.28px */
-letter-spacing: 5px;
-max-width: 100%;
-margin-top: 4%;
-}
-.part1{
- padding-left: 3% ; 
- padding-right: 3% ; 
-
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 156.4%;
+    letter-spacing: 5px;
+    max-width: 100%;
+    margin-top: 4%;
+    text-align: left;
+    direction: ltr;
 }
 
-.section{
+.part1 {
+    padding-left: 7%;
+    padding-right: 3%;
+
+
+}
+
+.section {
     margin-top: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-.image1{
+.image1 {
     width: 49.5vw;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     object-position: center;
-
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0; /* Reset margin */
 }
 
-.btn{
+
+.btn {
     border-top: 2px solid #FE9900;
     border-right: 3px solid #FE9900;
     border-bottom: 4px solid #FE9900;
     border-left: 3px solid #FE9900;
     background: rgba(217, 217, 217, 0.00);
-    width:40%;
+    width: 40%;
     color: #FE9900;
-font-size: 22px;
-font-style: normal;
-font-weight: 600;
-line-height: 156.4%; /* 34.408px */
-letter-spacing: 5.5px;
-padding-top: 15px;
-padding-bottom: 15px;
-margin-top: 4%;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 156.4%;
+    /* 34.408px */
+    letter-spacing: 5.5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 4%;
 
 
 }
 
-.section2{
-    display: flex;
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
     align-items: center;
-    flex-direction: row-reverse;
+
 }
-.section3{
-    display: flex;
+
+.section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }

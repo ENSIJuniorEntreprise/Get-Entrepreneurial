@@ -22,69 +22,98 @@
     width: 100%;
 }
 
-.logo1 {
-    width: 75%;
-    margin-left: 12.5%;
-    margin-top: 5%;
+.space {
+    height: 29%;
 }
 
-.line {
-    background-color: #9fc8d4;
-    height: 5px;
-    width: 85%;
-    margin-left: 7.5%;
-    margin-top: -5%;
+.Header-Event{
+    color: #E0DED2;
+font-family: Montserrat;
+font-size: 110px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 8.8px;
+text-align: center;
+}
+
+.get{
+    color: #FE9900;
+}
+
+.subtitle0{
+    display: flex;
+    align-items: center;
+    gap:1%;
+    justify-content: center;
+}
+
+.line{
+    width: 260px;
+    height: 4px;
+    background-color: #9FC8D4;
 }
 
 .slogan {
-    color: #9fc8d4;
-    margin-left: 64%;
+    color: #9FC8D4;
     font-size: 60px;
     font-weight: 500;
-    font-family: 'Photograph Signature', sans-serif; 
+    font-family: 'Photograph Signature', sans-serif;
+    margin-bottom: 0.7%;
 }
 
 .logo2 {
-    width: 10%;
+    width: 9%;
     height: auto;
     margin-left: 85%;
-    margin-top: -7%;
+    margin-top: -2%; 
 }
 
 .subscribe {
     border: 3px solid #E0DED2;
     color: #E0DED2;
     text-align: center;
-    font-family: proxima-nova;
-    font-size: 36px;
+    line-height: normal;
+    background-color: transparent;
+    padding: 20px 90px;
+    margin-left: 38.5%;
+    margin-top: 1%;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 2.88px;
-    background-color: transparent;
-    padding: 10px 70px;
-    margin-left: 38%;
-    margin-top: 2%;
+    letter-spacing: 1.92px;
 }
-.date-container{
+
+.date-container {
     display: flex;
-    gap:1%;
-    margin-left: 3%;
-    margin-top: 5%;
+    gap: 1%;
+    justify-content: center;
 }
 
-.icon, .utica, .date , .th, .jan{
-   font-size: 40px;
+.icon,
+.utica,
+.date,
+.th,
+.jan {
+    font-size: 40px;
+    white-space: nowrap;
+
 }
 
-.icon, .date, .th{
-    color:#9fc8d4;
+.icon,
+.date,
+.th {
+    color: #FE9900;
 }
 
-.th{
+.th {
     margin-top: -1%;
 }
 
-.jan,.utica{
-    color:#E0DED2;
+.jan,
+.utica {
+    color: #E0DED2;
 }
