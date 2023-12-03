@@ -29,7 +29,7 @@ function App() {
           <Route path="/collab" element={<Collab />} />
           <Route path="/Register" element={<Form />} />
         </Routes>
-       <Footer /> 
+       <Footer />  
       </Router>
     </>
   );

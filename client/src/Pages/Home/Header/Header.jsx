@@ -18,12 +18,12 @@ export default function Header() {
         </div>
         <div className="Header-Event"><span className="get">GET</span> Entrepreneurial</div>
         <div className="subtitle0">
-        <div className="line"></div>
-        <div className="slogan">#Forge_The_Future</div>
-        <div className="line"></div>
-      </div>
+          <div className="line"></div>
+          <div className="slogan">#Forge_The_Future</div>
+          <div className="line"></div>
+        </div>
         <button className="subscribe">SUBSCRIBE</button>
-        <img src={logo2} className="logo2" /> 
+        <img src={logo2} className="logo2" />
       </div>
     </div>
   );

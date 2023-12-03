@@ -1,54 +1,95 @@
+.title-pgm {
+    color: #E0DED2;
+    text-align: center;
+    font-family: proxima-nova;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9px;
+}
+
+.subtitle-pgm {
+    color: #FE9900;
+    font-family: proxima-nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    justify-content: center;
+    padding-bottom: 100px;
+
+}
+
+.line-sub-pgm {
+    width: 260px;
+    height: 4px;
+    background-color: #FE9900;
+}
+
+
+.body-timeline {
+    background-color: #E0DED2;
+    padding-bottom: 100px;
+    
+}
+
 .vertical-timeline::before {
 
-    background: #1f212d;;
+    background: #1f212d;
+    ;
 }
 
 .vertical-timeline-element-content {
-    background-color: #2ea3dd;
+    background-color: #9FC8D4;
+    border: 3px solid #1f212d;
 }
+
 .vertical-timeline-element-content:hover {
     background-color: #1F212D;
- 
-    .vertical-timeline-element-title{
+
+    .vertical-timeline-element-title {
         color: #E0DED2;
     }
-   
-    
+
+
 }
-@media only screen and (max-width: 1170px){
+
+
+
+
+@media only screen and (max-width: 1170px) {
     .vertical-timeline-element-content:hover {
         background-color: #1F212D;
-     
-        .vertical-timeline-element-title{
+
+        .vertical-timeline-element-title {
             color: #E0DED2;
         }
-        .vertical-timeline-element-date{
+
+        .vertical-timeline-element-date {
             color: #E0DED2;
-            
-           
-           
+
+
+
         }
-        
+
     }
 }
 
-.text-centered-agenda2  {
-    margin-top: 1ch;
-    margin-bottom: 1ch;
+.text-centered-agenda2 {
     position: relative;
     text-align: center;
-color: #1f212d;
-font-size: 10vw;
-font-family: Fantasy ;
-font-weight: 700;
+    color: #1f212d;
+    font-size: 10vw;
+    font-weight: 700;
 }
-.body-timeline{
+
+.body-timeline {
     display: flex;
     flex-direction: column;
-   
-}
 
-.element.style {
-    background: #2ea3dd;
 }
-

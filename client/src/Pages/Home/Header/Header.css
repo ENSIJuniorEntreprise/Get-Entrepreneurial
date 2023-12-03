@@ -1,16 +1,10 @@
-/* @import url(./../../../Assets/Photograph\ Signature.ttf); */
-@font-face {
-    font-family: 'Photograph Signature';
-    src: url(./../../../Assets/Photograph\ Signature.ttf) format('truetype');
-}
-
 .container0 {
     background-image: url(./../../../Assets/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -95px;
     z-index: 1;
-    height: 760px;
+    height: 102vh;
     width: 100%;
 }
 
@@ -18,38 +12,38 @@
     background: rgba(31, 33, 45, 0.44);
     backdrop-filter: blur(5px);
     z-index: 20;
-    height: 760px;
+    height: 102vh;
     width: 100%;
 }
 
 .space {
-    height: 29%;
+    height: 30%;
 }
 
-.Header-Event{
+.Header-Event {
     color: #E0DED2;
-font-family: Montserrat;
-font-size: 110px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 8.8px;
-text-align: center;
+    font-family: 'Proxima Nova ExtraBold';
+    font-size: 8.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 8.8px;
+    text-align: center;
 }
 
-.get{
+.get {
     color: #FE9900;
 }
 
-.subtitle0{
+.subtitle0 {
     display: flex;
     align-items: center;
-    gap:1%;
+    gap: 1%;
     justify-content: center;
 }
 
-.line{
-    width: 260px;
+.line {
+    width: 20%;
     height: 4px;
     background-color: #9FC8D4;
 }
@@ -65,8 +59,10 @@ text-align: center;
 .logo2 {
     width: 9%;
     height: auto;
-    margin-left: 85%;
-    margin-top: -2%; 
+    position: absolute;
+    top: 88%;
+    left: 90%;
+    transform: translate(-50%, -50%);
 }
 
 .subscribe {
@@ -75,22 +71,24 @@ text-align: center;
     text-align: center;
     line-height: normal;
     background-color: transparent;
-    padding: 20px 90px;
-    margin-left: 38.5%;
-    margin-top: 1%;
-    text-align: center;
-    font-family: Montserrat;
+    padding: 1.5vw 6.5vw;
+    font-family: 'Gilroy ExtraBold';
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.92px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 .date-container {
     display: flex;
     gap: 1%;
     justify-content: center;
+    font-family: 'Proxima Nova Bold';
 }
 
 .icon,
@@ -98,7 +96,7 @@ text-align: center;
 .date,
 .th,
 .jan {
-    font-size: 40px;
+    font-size: 3vw;
     white-space: nowrap;
 
 }
@@ -116,4 +114,305 @@ text-align: center;
 .jan,
 .utica {
     color: #E0DED2;
+}
+
+@media (max-width:1200px) {
+    .logo2 {
+        width: 12%;
+        height: auto;
+        position: absolute;
+        top: 88%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width:950px) {
+    .subscribe {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .slogan {
+        font-size: 50px;
+    }
+
+    .Header-Event {
+        white-space: nowrap;
+        font-size: 8vw;
+    }
+
+    .space {
+        height: 37%;
+    }
+}
+
+@media (max-width:800px) {
+    .subscribe {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .slogan {
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    .Header-Event {
+        font-size: 7.5vw;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .space {
+        height: 33%;
+    }
+
+    .logo2 {
+        width: 15%;
+    }
+
+    .icon,
+    .utica,
+    .date,
+    .th,
+    .jan {
+        font-size: 4vw;
+        white-space: nowrap;
+
+    }
+    .container0 {
+        background-image: url(./../../../Assets/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -95px;
+        z-index: 1;
+        height: 90vh;
+        width: 100%;
+    }
+    
+    .container1 {
+        background: rgba(31, 33, 45, 0.44);
+        backdrop-filter: blur(5px);
+        z-index: 20;
+        height: 90vh;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:700px) {
+    .subscribe {
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media (max-width:650px) {
+    .subscribe {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .slogan {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .Header-Event {
+        font-size: 7vw;
+    }
+ 
+
+    .logo2 {
+        width: 15%;
+    }
+
+}
+
+@media (max-width:550px) {
+
+    .container0 {
+
+        height: 80vh;
+    }
+    
+    .container1 {
+
+        height: 80vh;
+    }
+    .subscribe {
+        top:70%;
+        padding: 1vw 6vw;
+        font-size: 20px;
+    }
+    .Header-Event {
+        font-size: 7vw;
+        padding-top: 3%;
+    }
+
+}
+
+@media (max-width:500px) {
+    .container0 {
+
+        height: 60vh;
+    }
+    
+    .container1 {
+
+        height: 60vh;
+
+    }
+
+    .slogan {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .Header-Event {
+        font-size: 7vw;
+        letter-spacing: 7px;
+        padding-top: 1%;
+
+    }
+
+    .subscribe {
+        top:80%;
+        padding: 1vw 6vw;
+        font-size: 20px;
+    }
+    .space{
+        height: 40%;
+    }
+
+}
+
+@media (max-width:450px) {
+    .container0 {
+        height: 55vh;
+
+    }
+    
+    .container1 {
+
+        height: 55vh;
+    }
+
+
+    .slogan {
+        font-size: 30px;
+
+    }
+    .line {
+        width: 15%;
+        height: 2px;
+    }
+
+    .Header-Event {
+        font-size: 7.5vw;
+        letter-spacing: 5px;
+        padding-top: 3%;
+
+    }
+
+    .space {
+        height: 40%;
+    }
+    .subscribe {
+        top:83%;
+        padding: 1vw 6vw;
+        font-size: 15px;
+    }
+    .icon,
+    .utica,
+    .date,
+    .th,
+    .jan {
+        font-size: 4.25vw;
+
+    }
+}
+
+@media (max-width:400px) {
+
+
+
+    .slogan {
+        font-size: 30px;
+
+    }
+    .line {
+        width: 15%;
+        height: 2px;
+    }
+
+    .Header-Event {
+        font-size: 8vw;
+        letter-spacing: 4px;
+
+    }
+
+    .space {
+        height: 40%;
+    }
+    .subscribe {
+        top:80%;
+        padding: 1vw 6vw;
+        font-size: 15px;
+    }
+    .icon,
+    .utica,
+    .date,
+    .th,
+    .jan {
+        font-size: 4.5vw;
+
+    }
+}
+
+@media (max-width:335px) {
+
+
+
+    .slogan {
+        font-size: 30px;
+
+    }
+    .line {
+        width: 15%;
+        height: 2px;
+    }
+
+    .Header-Event {
+        font-size: 8.5vw;
+        letter-spacing: 3px;
+
+    }
+
+    .space {
+        height: 40%;
+    }
+    .subscribe {
+        top:78%;
+        padding: 1vw 6vw;
+        font-size: 15px;
+    }
+    .icon,
+    .utica,
+    .date,
+    .th,
+    .jan {
+        font-size: 5vw;
+
+    }
 }

@@ -43,7 +43,7 @@ nav{
    gap: 5vw;
    margin-right: 5vw;
    font-size: 1.3vw;
-   font-family: proxima-nova;
+   font-family: 'Gilroy ExtraBold';
    cursor: pointer;
    color:#E0DED2;
 }
@@ -121,8 +121,11 @@ nav{
        width: 17vw;
        
    }
-   nav{
-       background-color: var(--color-bg);
+   .nav{
+       background-color: rgba(31, 33, 45, 0.95);
+       color:#E0DED2;
+       font-size: 25px;
+
       
    }
    .Nav-elements-mobile{
@@ -139,7 +142,6 @@ nav{
    }
    .nav{
        text-decoration: none;
-       color: white;
        text-align: center;
        padding: 4vh;
        display: flex;
@@ -160,7 +162,17 @@ nav{
        background-color: white;
        margin-right: 7vw;
        margin-top: 1vw;
+       background-color: transparent;
+
    }
+   .Nav-btn svg{
+    color: #E0DED2;
+   }
+   .current-page::after {
+    content: "";
+    display: none;
+
+  }
    
 }
 
@@ -170,8 +182,7 @@ nav{
    }
    .logo{
        width:15vw;
-       margin-top: 16px;
-       margin-left: 5vw;
+       margin-left: 1vw;
    }
    .Nav-elements{
        font-size: large;
@@ -185,8 +196,7 @@ nav{
    }
    .logo{
        width:20vw;
-       margin-top: 16px;
-       margin-left: 5vw;
+       margin-left: 1vw;
    }
    .Nav-elements-mobile{
        top:13vw;
@@ -195,7 +205,7 @@ nav{
 @media(max-width:500px){
    .logo{
        width:23vw;
-       margin-left: 5vw;
+       margin-left: 0.25vw;
    }
    .Nav-btn svg{
        width: 16vw;
@@ -211,19 +221,21 @@ nav{
    }
    .logo{
        width:27vw;
-       margin-top: 15px;
-       margin-left: 5vw;
+       margin-left: 0vw;
 
    }
    .Nav-elements-mobile{
        top:18vw;
    }
    .Nav-btn svg{
-       height: 9vw;
+       height: 7vw;
    }
    .Nav-btn{
        margin-right: 2vw;
        margin-top: 2vw;
+   }
+   .nav{
+    font-size: larger;
    }
 }
 @media(max-width:300px){
@@ -232,18 +244,20 @@ nav{
    }
    .logo{
        width:30vw;
-       margin-top: 10px;
-       margin-left: 5vw;
+       margin-left: -2vw;
 
    }
    .Nav-elements-mobile{
-       top:20.3vw;
+       top:20vw;
    }
    .Nav-btn svg{
-       height: 12vw;
+       height: 8vw;
    }
    .Nav-btn{
        margin-right: 2vw;
        margin-top: 2vw;
+   }
+   .nav{
+    font-size: 17px;
    }
 }
