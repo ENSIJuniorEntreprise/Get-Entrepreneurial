@@ -25,14 +25,14 @@ export default function Allies() {
     className: `testimonial-content--3 testimonial-grid`,
     responsive: [
       {
-          breakpoint: 1200,
+          breakpoint: 900,
           settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
           },
       },
       {
-          breakpoint: 992,
+          breakpoint: 600,
           settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -47,7 +47,7 @@ export default function Allies() {
       <div className="title1">OUR VALUED ALLIES</div>
       <div className="subtitle1">
         <div className="line-sub"></div>
-        <div>Lorem ipsum dolor sit amet </div>
+        <div className="sub">Lorem ipsum dolor sit amet </div>
         <div className="line-sub"></div>
       </div>
 

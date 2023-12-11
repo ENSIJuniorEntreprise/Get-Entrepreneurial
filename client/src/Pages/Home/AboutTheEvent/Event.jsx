@@ -2,6 +2,7 @@ import './Event.css';
 import icon1 from "./../../../Assets/icon1.png";
 import icon2 from "./../../../Assets/icon2.png";
 import icon3 from "./../../../Assets/icon3.png";
+import get from "./../../../Assets/Get.png"
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 
@@ -16,6 +17,7 @@ export default function Event() {
   useEffect(() => {
     const updateCountdown = () => {
       const then = moment('2024-01-24 08:30:00', 'YYYY-MM-DD hh:mm:ss');
+      // const then = moment('2023-07-24 08:30:00', 'YYYY-MM-DD hh:mm:ss');
       const now = moment();
 
       if (now >= then) {
@@ -53,7 +55,7 @@ export default function Event() {
       </div>
 
 
-      <div className="aboutTheEvent">
+       <div className="aboutTheEvent">
 
         <div className="values">
           <div className="icon-title">
@@ -66,7 +68,7 @@ export default function Event() {
         <div className="thematic">
           <div className="icon-title">
             <img src={icon2} className="icons" />
-            <div>thematic</div>
+            <div>Thematic</div>
           </div>
           <div className="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
         </div>
@@ -79,14 +81,14 @@ export default function Event() {
           <div className="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
         </div>
 
-      </div>
-
-      <div className="counter-container">
+      </div> 
+ 
+      {!finish && <div className="counter-container">
         <div className='time-line'>
         <div className='time-remaining-title'>TIME REMAINING</div>
         <div className='line1'></div>
         </div>
-        {!finish &&
+        
           <div className="timer-container">
             <div className="timer">
               <div className='time1'>{days}</div>
@@ -112,11 +114,11 @@ export default function Event() {
             </div>
           
           </div>
-           }
-        {finish &&
-          <img src={icon1} className="header-logo" />}
+           
+        
         <div className='line2'></div>
-      </div>
+      </div>  }
+      {/* {finish && <img src={get} className="header-logo" />} */}
 
     </div>
   );

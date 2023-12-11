@@ -8,7 +8,7 @@
 .title {
     color: #1F212D;
     text-align: center;
-    font-family: proxima-nova;
+    font-family: 'Proxima Nova Extrabold';
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -18,7 +18,7 @@
 
 .subtitle {
     color: #1F212D;
-    font-family: proxima-nova;
+    font-family: 'Proxima Nova Extrabold';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -31,8 +31,8 @@
 
 }
 
-.line-sub {
-    width: 260px;
+.subtitle .line-sub {
+    width: 20%;
     height: 4px;
     background-color: #FE9900;
 }
@@ -61,7 +61,7 @@
 
 .icon-title div {
     color: #1F212D;
-    font-family: proxima-nova;
+    font-family: 'Proxima Nova Extrabold';
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
@@ -71,24 +71,26 @@
 
 .parag {
     color: #1F212D;
-    font-family: proxima-nova;
+    font-family: 'Proxima Nova Extrabold';
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 5px;
+    text-align: center;
 }
 
 .time-remaining-title {
 
     color: #1F212D;
-    font-family: proxima-nova;
+    font-family: 'Proxima Nova Extrabold';
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 9px;
     margin-left: 3%;
+    white-space: nowrap;
 }
 
 .time-line {
@@ -156,7 +158,7 @@
 
 .time1 {
     color: #1F212D;
-    font-family: proxima-nova;
+    font-family: 'Proxima Nova Extrabold';
     font-size: 96px;
     font-style: normal;
     font-weight: 700;
@@ -185,4 +187,354 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 24px;
+}
+@media (max-width:1200px){
+    
+    .timer-container {
+        display: flex;
+        width: 98%;
+        height: 15vw;
+        gap: 2%;
+        margin-left: 1%;
+    }
+    .time1, .two-points {
+        font-size: 7vw;
+    }
+    
+}
+@media (max-width:1078px){
+    .counter-container::after {
+        right: 0;
+        top: 10%;
+        height: 70%;
+    }
+}
+
+
+@media (max-width:1020px){
+    .event-container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        }
+
+    .parag{
+        max-width: 100%;
+        font-size: 2vw;
+        letter-spacing: 3px;
+
+    }
+    .icons {
+        height: 50px;
+        width: auto;
+    }
+
+    .icon-title div{
+        font-size: 3vw;
+
+    }
+
+
+}
+
+@media (max-width:927px){
+    .counter-container::after {
+        right: 0;
+        top: 12%;
+        height: 70%;
+    }
+
+    .timer-container {
+        display: flex;
+        width: 98%;
+        height: 15vw;
+        gap: 2%;
+        margin-left: 1%;
+    }
+    .time1, .two-points {
+        font-size: 7vw;
+    }
+    .time2{
+        font-size: 2.5vw;
+    }
+    .time-remaining-title {
+        font-size: 4vw;
+    }
+}
+@media (max-width:800px){
+    .counter-container {
+        position: relative;
+        margin-top: 50px;
+        width: 90%;
+        margin-left: 5%;
+
+    }
+    .time-remaining-title {
+
+        font-size: 4vw;
+        font-weight: 400;
+        letter-spacing: 6px;
+        margin-left: 2%;
+        
+    }
+    .counter-container::after {
+        right: 0;
+        top: 9%;
+        height: 70%;
+    }
+    .time1 {
+        font-size: 10vw;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4px;
+        width: 100%;
+        text-align: center;
+        padding-left: 10%;
+    
+    }
+    .time2 {
+        font-size: 3vw;
+        letter-spacing: 3px;
+    }
+    .timer-container {
+        display: flex;
+        width: 97%;
+        height: 19vw;
+        gap: 1.5%;
+        
+    }
+    .two-points {
+        color: #FE9900;
+        font-size: 10vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4px;
+        
+    }
+
+}
+@media (max-width:700px){
+    .event-container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .event-container .title{
+        font-size: 5vw;
+        white-space: nowrap;
+    }
+    .event-container .subtitle {
+        font-size: 17px;
+        white-space: nowrap;
+
+    }
+    .event-container .line-sub {
+        width: 15%;
+        height: 3px;
+    }
+    .aboutTheEvent{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        margin-top: 30px;
+        margin-left: 4%;
+
+    }
+    .parag{
+        max-width: 100%;
+        font-size: 3vw;
+        letter-spacing: 3px;
+        margin-left: 11%;
+        text-align: start;
+
+    }
+    .icons {
+        height: auto;
+        width: 7%;
+    }
+    .icon-title{
+        display:flex ;
+        flex-direction: row;
+    }
+    .icon-title div{
+        font-size: 4vw;
+        color:#FE9900
+
+    }
+    
+
+
+}
+@media (max-width:600px){
+    .event-container{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .event-container .title{
+        font-size: 6vw;
+    }
+    .event-container .subtitle {
+        margin-top: 12px;
+        letter-spacing: 3px;
+
+gap:2%;
+    }
+
+    .parag{
+        max-width: 100%;
+        font-size: 3.5vw;
+        letter-spacing: 3px;
+        margin-left: 11.5%;
+    }
+    .icons {
+        height: auto;
+        width: 7%;
+    }
+
+    .icon-title div{
+        font-size: 4.5vw;
+    }
+    
+
+}
+
+@media (max-width:500px){
+    .event-container .title{
+        font-size: 5.5vw;
+    }
+    .event-container .subtitle {
+        font-size: 3vw;
+    }
+    .event-container .line-sub {
+        width: 15%;
+        height: 2px;
+    }
+    .parag{
+        max-width: 100%;
+        font-size: 3.5vw;
+        letter-spacing: 2.25px;
+        margin-left: 13%;
+    }
+    .icons {
+        height: auto;
+        width: 8%;
+    }
+    .icon-title div{
+        font-size: 5vw;
+        letter-spacing: 4px;
+
+    }
+
+
+}
+
+@media (max-width:450px){
+    .event-container .title{
+        font-size: 7vw;
+        letter-spacing: 5px;
+    }
+    .event-container.subtitle {
+        font-size: 3.5vw;
+        letter-spacing: 3px;
+
+
+    }
+    .event-container .line-sub {
+        width: 13%;
+        height: 2px;
+    }
+    .parag{
+        max-width: 100%;
+        font-size: 3.5vw;
+        letter-spacing: 2px;
+        margin-left: 14%;
+    }
+    .icons {
+        height: auto;
+        width: 8%;
+    }
+    .icon-title div{
+        font-size: 5.5vw;
+        letter-spacing: 4px;
+
+    }
+    .time-remaining-title {
+
+        font-size: 4.5vw;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-left: 2%;
+        
+    }
+    .line1,.line2{
+        height: 2px;
+    }
+    .counter-container::before,
+.counter-container::after {
+
+    width: 2px;
+}
+.counter-container {
+    position: relative;
+    margin-top: 40px;
+    width: 94%;
+    margin-left: 3%;
+}
+.time1, .two-points {
+    font-size: 11vw;
+}
+.counter-container::after {
+    right: 0;
+    top: 10%;
+    height: 70%;
+}
+    
+
+}
+
+@media (max-width:360px){
+    .event-container .title{
+        font-size: 7vw;
+        letter-spacing: 4px;
+    }
+    .event-container .subtitle {
+        font-size: 3.5vw;
+        letter-spacing: 2px;
+
+    }
+    .event-container .line-sub {
+        width: 15%;
+        height: 1.5px;
+    }
+    .parag{
+        max-width: 100%;
+        font-size: 4vw;
+        letter-spacing: 2px;
+        margin-left: 18%;
+    }
+    .icons {
+        height: auto;
+        width: 10%;
+    }
+    .icon-title div{
+        font-size: 6vw;
+        letter-spacing: 3px;
+
+    }
+    .time1, .two-points {
+        font-size: 12vw;
+    }
+    .time2 {
+        font-size: 4vw;
+        letter-spacing: 3px;
+    }
+    .timer-container {
+        display: flex;
+        width: 97%;
+        height: 23vw;
+        gap: 0.5%;
+        margin-left: 2%;
+        
+    }
+
+
 }

@@ -12,14 +12,16 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 9px;
+    font-family: 'Proxima Nova ExtraBold';
 }
 
 .allies .subtitle1 {
     color: #1F212D;
-    font-family: proxima-nova;
+    font-family: 'Proxima Nova ExtraBold';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
+    font-family: 'Proxima Nova ExtraBold';
     line-height: normal;
     letter-spacing: 5px;
     display: flex;
@@ -30,12 +32,15 @@
 }
 
 .allies .line-sub {
-    width: 260px;
+    width: 20%;
     height: 4px;
     background-color: #FE9900;
 }
+.sub{
+    text-align: center;
+}
 .containerPartenaires{
-    width: 90%;
+    width: 85%;
     margin:0 auto;
 }
 
@@ -72,4 +77,144 @@
 
 slick-arrow slick-next{
     display: none !important;
+}
+
+@media (max-width:900px){
+    .item {
+        height: 200px;
+        position: relative;
+    }
+    .image {
+        width: 35%;
+        height: auto;
+    }
+    .allies {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width:800px){
+    .item {
+        height: 200px;
+        position: relative;
+    }
+    .image {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width:700px){
+    .allies .title1{
+        font-size: 5vw;
+        white-space: nowrap;
+    }
+    .allies .subtitle1 {
+        font-size: 17px;
+        white-space: nowrap;
+
+    }
+    .allies .line-sub {
+        width: 15%;
+        height: 3px;
+    }
+
+}
+@media (max-width:600px){
+    .allies .title1{
+        font-size: 6vw;
+    }
+    .allies .subtitle1 {
+        margin-top: 12px;
+        letter-spacing: 3px;
+
+gap:2%;
+    }
+    .item {
+        height: 200px;
+        position: relative;
+    }
+    .image {
+        width: auto;
+        height: 70%;
+    }
+    .allies {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .slick-dots li button:before
+{
+    font-size: 10px !important;
+
+
+}
+.allies {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+}
+
+@media (max-width:500px){
+    .allies .title1{
+        font-size: 5.5vw;
+    }
+    .allies .subtitle1 {
+        font-size: 3vw;
+    }
+    .allies .line-sub {
+        width: 15%;
+        height: 2px;
+    }
+
+}
+
+@media (max-width:450px){
+    .allies .title1{
+        font-size: 7vw;
+        letter-spacing: 5px;
+    }
+    .allies .subtitle1 {
+        font-size: 3.5vw;
+        letter-spacing: 3px;
+
+    }
+    .allies .line-sub {
+        width: 13%;
+        height: 2px;
+    }
+    .item {
+        height: 150px;
+        position: relative;
+    }
+    .image {
+        width: auto;
+        height: 70%;
+    }
+
+
+}
+
+@media (max-width:360px){
+    .allies .title1{
+        font-size: 7vw;
+        letter-spacing: 4px;
+    }
+    .allies .subtitle1 {
+        font-size: 3.5vw;
+        letter-spacing: 2px;
+
+    }
+    .allies .line-sub {
+        width: 15%;
+        height: 1.5px;
+    }
+    .containerPartenaires{
+        width: 80%;
+    }
+    .image {
+        width: auto;
+        height: 60%;
+    }
+
 }

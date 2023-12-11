@@ -1,7 +1,7 @@
 .title-pgm {
     color: #E0DED2;
     text-align: center;
-    font-family: proxima-nova;
+    font-family: 'Proxima Nova ExtraBold';
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -10,8 +10,8 @@
 }
 
 .subtitle-pgm {
-    color: #FE9900;
-    font-family: proxima-nova;
+    color: #1f212d;
+    font-family: 'Proxima Nova ExtraBold';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -21,12 +21,13 @@
     align-items: center;
     gap: 1%;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 5vw;
+    white-space: nowrap;
 
 }
 
 .line-sub-pgm {
-    width: 260px;
+    width: 20%;
     height: 4px;
     background-color: #FE9900;
 }
@@ -34,7 +35,7 @@
 
 .body-timeline {
     background-color: #E0DED2;
-    padding-bottom: 100px;
+    padding-bottom: 5vw;
     
 }
 
@@ -91,5 +92,87 @@
 .body-timeline {
     display: flex;
     flex-direction: column;
+
+}
+
+
+
+@media (max-width:700px){
+    .body-timeline .title-pgm{
+        font-size: 5vw;
+        white-space: nowrap;
+    }
+    .body-timeline .subtitle-pgm {
+        font-size: 17px;
+        white-space: nowrap;
+
+    }
+    .body-timeline .line-sub-pgm{
+        width: 15%;
+        height: 3px;
+    }
+
+}
+@media (max-width:600px){
+    .body-timeline .title-pgm{
+        font-size: 6vw;
+    }
+    .body-timeline .subtitle-pgm {
+        margin-top: 12px;
+        letter-spacing: 3px;
+
+gap:2%;
+    }
+
+
+}
+
+@media (max-width:500px){
+    .body-timeline .title-pgm{
+        font-size: 5.5vw;
+    }
+    .body-timeline .subtitle-pgm {
+        font-size: 3vw;
+    }
+    .body-timeline .line-sub-pgm {
+        width: 15%;
+        height: 2px;
+    }
+
+}
+
+@media (max-width:450px){
+    .body-timeline .title-pgm{
+        font-size: 7vw;
+        letter-spacing: 5px;
+    }
+    .body-timeline .subtitle-pgm {
+        font-size: 3.5vw;
+        letter-spacing: 3px;
+
+    }
+    .body-timeline .line-sub-pgm {
+        width: 13%;
+        height: 2px;
+    }
+
+
+
+}
+
+@media (max-width:360px){
+    .body-timeline .title-pgm{
+        font-size: 7vw;
+        letter-spacing: 4px;
+    }
+    .body-timeline .subtitle-pgm {
+        font-size: 3.5vw;
+        letter-spacing: 2px;
+
+    }
+    .body-timeline .line-sub-pgm {
+        width: 15%;
+        height: 1.5px;
+    }
 
 }

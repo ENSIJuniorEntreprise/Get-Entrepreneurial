@@ -78,9 +78,10 @@
     font-weight: 700;
     letter-spacing: 1.92px;
     position: absolute;
-    top: 75%;
+    top: 77%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor:pointer;
 }
 
 
@@ -130,7 +131,7 @@
 @media (max-width:950px) {
     .subscribe {
         position: absolute;
-        top: 75%;
+        top: 78%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -145,14 +146,20 @@
     }
 
     .space {
-        height: 37%;
+        height: 35%;
+    }
+    .container0 {
+        height: 90vh;
+    }
+    
+    .container1 {
+        height: 90vh;
     }
 }
 
 @media (max-width:800px) {
     .subscribe {
         position: absolute;
-        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -191,7 +198,7 @@
         background-size: cover;
         margin-top: -95px;
         z-index: 1;
-        height: 90vh;
+        height: 80vh;
         width: 100%;
     }
     
@@ -199,7 +206,7 @@
         background: rgba(31, 33, 45, 0.44);
         backdrop-filter: blur(5px);
         z-index: 20;
-        height: 90vh;
+        height: 80vh;
         width: 100%;
     }
 
@@ -208,7 +215,6 @@
 @media (max-width:700px) {
     .subscribe {
         position: absolute;
-        top: 72%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -218,7 +224,6 @@
 @media (max-width:650px) {
     .subscribe {
         position: absolute;
-        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -226,6 +231,12 @@
     .slogan {
         font-size: 40px;
         font-weight: 500;
+    }
+
+    .line {
+        width: 20%;
+        height: 2px;
+        background-color: #9FC8D4;
     }
 
     .Header-Event {
@@ -236,6 +247,17 @@
     .logo2 {
         width: 15%;
     }
+    .container0 {
+        height: 75vh;
+    }
+    
+    .container1 {
+
+        height: 75vh;
+    }
+    .space{
+        height: 35%;
+    }
 
 }
 
@@ -243,15 +265,14 @@
 
     .container0 {
 
-        height: 80vh;
+        height: 70vh;
     }
     
     .container1 {
 
-        height: 80vh;
+        height: 70vh;
     }
     .subscribe {
-        top:70%;
         padding: 1vw 6vw;
         font-size: 20px;
     }
@@ -382,7 +403,23 @@
 
 @media (max-width:335px) {
 
-
+    .container0 {
+        background-image: url(./../../../Assets/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -95px;
+        z-index: 1;
+        height: 50vh;
+        width: 100%;
+    }
+    
+    .container1 {
+        background: rgba(31, 33, 45, 0.44);
+        backdrop-filter: blur(5px);
+        z-index: 20;
+        height: 50vh;
+        width: 100%;
+    }
 
     .slogan {
         font-size: 30px;
@@ -394,7 +431,7 @@
     }
 
     .Header-Event {
-        font-size: 8.5vw;
+        font-size: 8vw;
         letter-spacing: 3px;
 
     }
@@ -403,7 +440,7 @@
         height: 40%;
     }
     .subscribe {
-        top:78%;
+        top:81%;
         padding: 1vw 6vw;
         font-size: 15px;
     }
@@ -416,3 +453,10 @@
 
     }
 }
+
+
+
+
+   
+
+    

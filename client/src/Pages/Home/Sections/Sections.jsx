@@ -10,13 +10,13 @@ export default function Sections() {
 
     <div className="sections-container">
       <div className="title1">UNVEILING THE EXPERIENCE</div>
-      <div className="subtitle1">
+      <div className="subtitle11">
         <div className="line-sub"></div>
         <div>Lorem ipsum dolor sit amet </div>
         <div className="line-sub"></div>
       </div>
 
-      <div>
+       <div>
 
         <div className="section">
           <div className="part1">
@@ -28,7 +28,7 @@ export default function Sections() {
             <button className="btn">Subscribe {">"}</button>
           </div>
           <div className="part2">
-             <img src={img1} className="image1" />
+            <img src={img1} className="image1" />
           </div>
         </div>
 
@@ -41,7 +41,7 @@ export default function Sections() {
             </div>
           </div>
           <div className="part2">
-             <img src={img2} className="image1" />
+            <img src={img2} className="image1" />
           </div>
         </div>
 
@@ -55,10 +55,10 @@ export default function Sections() {
             </div>
           </div>
           <div className="part2">
-             <img src={img3} className="image1" />
+            <img src={img3} className="image1" />
           </div>
         </div>
-      </div>
+      </div> 
 
     </div>
   );
