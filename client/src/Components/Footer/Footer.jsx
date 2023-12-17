@@ -11,9 +11,9 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer_container">
-        <div className="part11">
+        <div className="part111">
 
-          <img src={logo} alt="logo" className="logo-img" />
+          <img src={logo} alt="logo" className="logo-img1" />
           <div className="para">
             <span className="slogann">#Forge_The_Future</span>
           </div>

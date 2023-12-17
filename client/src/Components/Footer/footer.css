@@ -12,7 +12,7 @@
 
 }
 
-.part11 {
+.part111 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,7 @@
 }
 
 
-.logo-img {
+.logo-img1 {
     width: 80%;
     height: auto;
     padding-top: 3%;

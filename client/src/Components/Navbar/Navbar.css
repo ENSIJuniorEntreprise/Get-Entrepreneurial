@@ -46,6 +46,7 @@ nav{
    font-family: 'Gilroy ExtraBold';
    cursor: pointer;
    color:#E0DED2;
+   letter-spacing: 1px;
 }
 
 .current-page {

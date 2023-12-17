@@ -10,12 +10,16 @@ function Timeline() {
     return (
         <React.Fragment>
             <div className="body-timeline">
-                <div className="text-centered-agenda2">Agenda</div>
+                <div className="container01">
+                    <div className="container2">
+                        <div className="text-centered-agenda2">Agenda</div>
 
-                <div className="subtitle-pgm">
-                    <div className="line-sub-pgm"></div>
-                    <div>Lorem ipsum dolor sit amet </div>
-                    <div className="line-sub-pgm"></div>
+                        <div className="subtitle-pgm">
+                            <div className="line-sub-pgm"></div>
+                            <div>Lorem ipsum dolor sit amet </div>
+                            <div className="line-sub-pgm"></div>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <VerticalTimeline >
