@@ -3,7 +3,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBInput } from "mdbreact";
 import { Button, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import { Alert } from 'react-bootstrap';
 import axios from "axios";
-// import logo16 from '../Assets/images/logo16.png'
+import Get from '../../Assets/Get.png'
 import ReactLoading from "react-loading";
 import './form.css'
 
@@ -103,8 +103,13 @@ function Form() {
   };
 
   return (
-    <div ref={myRef} className="Inscr_form">
-      <h3 className="text-center inscri-title" >Inscrivez vous</h3> 
+    <div ref={myRef}>
+                <div className="container03">
+                <div className="container4">
+                    <div className="text-centered-agenda2">Inscrivez vous</div>
+                
+          <div className="formContainer">
+            <div className="formBox">
       <MDBContainer >
         <MDBRow >
           <MDBCol md="12">
@@ -272,9 +277,15 @@ function Form() {
               </div>
             </form>
           </MDBCol>
-          {/* <img src={logo16} className="logo-img" alt=""></img> */}
         </MDBRow>
       </MDBContainer>
+      <div>
+      <img src={Get} className="logo-img" alt=""></img>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
     </div>
   );
 }

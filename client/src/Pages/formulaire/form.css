@@ -1,3 +1,46 @@
+.container4 .text-centered-agenda2{
+  font-weight: 400!important;
+  padding-top: 12vw;
+  color: #FE9900 !important;;
+}
+
+.container03 {
+  margin-top: -10vw;
+  z-index: 1;
+  
+  
+
+}
+ .sub{
+  color: #FE9900 ;
+  font-weight: 700;
+ }
+
+.container4 {
+   background: url(./../../Assets/form.jpg);
+   background-repeat: no-repeat;
+   background-size: 120% auto;
+   background-position: 50% -20vw;
+   background-attachment: fixed;
+      opacity: 0.9;
+   z-index: 25;
+   
+}
+.formContainer{
+  /* background-color: #e0ded2; */
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+.formBox{
+  width: 80%;
+  border: 3px solid #FE9900;
+  margin-left: 10%;
+  background-color: #e0ded2f0; 
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+}
+
 .Inscr_form{
   padding-top: 20vh;
   margin-bottom: 10vh;
@@ -11,13 +54,12 @@
     margin-top: -120px !important;
   
 }
-.logo-img{
-  width: 50%;
+.logo-img {
+  width: 100%!important; /* Adjust this value based on your design preferences */
   height: auto;
-  justify-content: center;
-  object-fit: contain;
-  padding-left: 5%;
+  margin: 50% auto;
 }
+
 @media screen and (max-width: 768px) {
   .logo-img{
     display:none

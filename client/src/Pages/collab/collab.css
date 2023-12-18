@@ -1,32 +1,40 @@
 .Collab-section1{
     background-color: #E0DED2;
 }
+.text-centered-agenda2{
+    font-weight: 400!important;
+    padding-top: 17vw;
+    color: #e0ded2 !important;;
+}
+
 .container02 {
-    margin-top: -95px;
-    z-index: 1;
- 
+   margin-top: -10vw;
+   z-index: 1;
+   
+
+}
+
+.container3 {
+    background: url(./../../Assets/image4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0% -15vw;
+    background-attachment: fixed;
+    opacity: 0.9;
+    z-index: 25;
+    
  }
- 
- .container3 {
-     background: url(./../../Assets/image4.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: 10% ;
-     opacity: 0.9;
-     backdrop-filter: blur(5px);
-     z-index: 20;
-  }
 
   .jobs-offer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 1.5vw;
+    padding-bottom: 2vw;
     background-color: #E0DED2;
 }
 
 .jobs-offer .title1,.exposant .title1 {
     color: #1F212D;
     text-align: center;
-    font-size: 60px;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -36,30 +44,31 @@
 }
 .jobs{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 15% 15% 15% 15% 15%;
     gap:5vw;
     justify-content:center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 .ally {
     position: relative;
     width: 100%;
-    height: 20vw;
+    gap:5%;
+    height: 18.5vw;
     border: 3px solid #FE9900;
     overflow: hidden;
 }
 
-.allyphoto {
+ .allyphoto {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: cover; 
     position: absolute;
     top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-bottom: 1%;
-}
+    padding-bottom: 1vw; 
+} 
 
 
 .alliesCont {
@@ -69,8 +78,8 @@
     background-color: rgba(224, 222, 210, 0.9);
     display: flex;
     flex-direction: column;
-    gap:7px;
-    padding: 5px;
+    gap:0.5vw;
+    padding: 0.25vw;
     box-sizing: border-box;
 }
 
@@ -79,9 +88,11 @@
     border: 2px solid #FE9900;
     color: #FE9900;
     background-color: transparent;
-    font-size: large;
-    padding: 5px 10px;
+    font-size: 1.25vw;
+    padding: 0.45vw 1.5vw;
     cursor: pointer;
+    letter-spacing: 0.2vw;
+    white-space: nowrap;
 }
 
 .btn2 {
@@ -91,13 +102,13 @@
 }
 .exposant{
     background-color: #1F212D;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 1.5vw;
+    padding-bottom: 3vw;
 }
 .exposant .title1 {
     color: #9FC8D4;
     text-align: center;
-    font-size: 60px;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -108,7 +119,7 @@
 .exp {
     position: relative;
     width: 100%;
-    height: 15vw;
+    height: 13vw;
     border: 3px solid #9FC8D4;
     background-color: #E0DED2;
     overflow: hidden;
@@ -126,7 +137,7 @@
 .sponsor {
     position: relative;
     width: 100%;
-    height: 15vw;
+    height: 13vw;
     border: 3px solid #FE9900;
     background-color: #E0DED2;
     overflow: hidden;
@@ -140,4 +151,315 @@
     left: 50%;
     transform: translate(-50%, -50%);
     
+}
+@media (max-width:950px) {
+
+    .container3 {
+        background: url(./../../Assets/image4.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 0% -9vw;
+        background-attachment: fixed;
+        opacity: 0.9;
+        z-index: 25;
+    }
+    .jobs{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        gap:5vw;
+        justify-content:center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .ally {
+        position: relative;
+        width: 100%;
+        height: 24vw;
+        border: 3px solid #FE9900;
+        overflow: hidden;
+    }
+    .exp,.sponsor{
+        height: 18vw;
+    }
+    .btn1,
+.btn2 {
+
+    font-size: 1.75vw;
+    padding: 0.45vw 1.5vw;
+    letter-spacing: 0.2vw;
+
+}
+
+}
+
+@media (max-width:734px) {
+    .text-centered-agenda2 {
+        font-weight: 400!important;
+        padding-top: 22vw;
+        color: #e0ded2 !important;
+    }
+
+    .container02 {
+        z-index: 1;
+        height: auto; 
+        margin-top: -13vw;
+    }
+
+    .container3 {
+        background: url(./../../Assets/image4.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 0% -10vw;
+        background-attachment: fixed;
+        opacity: 0.9;
+        z-index: 25;
+    }
+    .jobs-offer {
+        padding-top: 1.5vw;
+        padding-bottom: 2vw;
+        background-color: #E0DED2;
+    }
+    
+    .jobs-offer .title1,.exposant .title1 {
+        font-size: 5vw;
+        letter-spacing: 7px;
+        padding-bottom: 3%;
+        padding-top: 1%;
+
+    }
+    .exposant .title1 {
+        font-size: 5vw;
+        letter-spacing: 7px;
+        padding-bottom: 3%;
+    } 
+}
+@media (max-width:700px){
+    .container3 .title-pgm{
+        font-size: 5vw;
+        white-space: nowrap;
+    }
+    .container3 .subtitle-pgm {
+        font-size: 17px;
+        white-space: nowrap;
+
+    }
+    .container3 .line-sub-pgm{
+        width: 15%;
+        height: 3px;
+    }
+
+
+}
+
+@media (max-width:600px){
+    .container3 .title-pgm{
+        font-size: 6vw;
+    }
+    .container3 .subtitle-pgm {
+        margin-top: 12px;
+        letter-spacing: 3px;
+
+gap:2%;
+    }
+    .container3 .text-centered-agenda2 {
+        font-weight: 400!important;
+        padding-top: 30vw;
+        color: #e0ded2 !important;
+    }
+
+    .container02 {
+        z-index: 1;
+        height: auto;
+        margin-top: -14vw;
+    }
+
+    .container3 {
+        background: url(./../../Assets/image4.jpg);
+        background-repeat: no-repeat;
+        background-size: 120% auto;
+        background-position: 89% -40px;
+        background-attachment: fixed;
+        opacity: 0.9;
+        z-index: 25;
+    }
+    .jobs{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap:5vw;
+        justify-content:center;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    .ally {
+        position: relative;
+        width: 100%;
+        height: 32vw;
+        border: 3px solid #FE9900;
+        overflow: hidden;
+    }
+    .exp,.sponsor{
+        height: 24vw;
+    }
+    .btn1,
+.btn2 {
+
+    font-size: 2.5vw;
+    padding: 0.45vw 1.5vw;
+    letter-spacing: 0.2vw;
+
+}
+.jobs-offer .title1,.exposant .title1 {
+    font-size: 6vw;
+    letter-spacing: 0.75vw;
+    padding-bottom: 3%;
+    padding-top: 1%;
+
+}
+.exposant .title1 {
+    font-size: 6vw;
+    letter-spacing: 0.75vw;
+    padding-bottom: 3%;
+}
+.jobs-offer,.exposant {
+    padding-bottom: 4vw;
+}
+ 
+
+}
+@media (max-width:500px){
+    .container3 .title-pgm{
+        font-size: 5.5vw;
+    }
+    .container3 .subtitle-pgm {
+        font-size: 3vw;
+    }
+    .container3 .line-sub-pgm {
+        width: 15%;
+        height: 2px;
+    }
+
+}
+@media (max-width:450px){
+    .container3 .title-pgm{
+        font-size: 7vw;
+        letter-spacing: 5px;
+    }
+    .container3 .subtitle-pgm {
+        font-size: 3.5vw;
+        letter-spacing: 3px;
+
+    }
+    .container3 .line-sub-pgm {
+        width: 13%;
+        height: 2px;
+    }
+
+}
+@media (max-width:400px){
+    .text-centered-agenda2 {
+        font-weight: 400!important;
+        padding-top: 38vw!important;
+        color: #e0ded2 !important;
+    }
+
+    .container02 {
+        z-index: 1;
+        height: auto;
+        margin-top: -18vw;
+    }
+
+    .container3 {
+        background: url(./../../Assets/image4.jpg);
+        background-repeat: no-repeat;
+        background-size: 140% auto;
+        background-position: 90% -30px;
+        background-attachment: fixed;
+        opacity: 0.9;
+        z-index: 25;
+    }
+    .jobs{
+        display: grid;
+        grid-template-columns: 40% 40% ;
+        gap:7vw;
+        justify-content:center;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    .ally {
+        position: relative;
+        width: 100%;
+        height: 40vw;
+        border: 3px solid #FE9900;
+        overflow: hidden;
+    }
+    .exp,.sponsor{
+        height: 32vw;
+    }
+    .btn1,
+.btn2 {
+
+    font-size: 3vw;
+    padding: 0.45vw 1.5vw;
+    letter-spacing: 0.2vw;
+
+}
+.jobs-offer .title1,.exposant .title1 {
+    font-size: 8vw;
+    letter-spacing: 0.75vw;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    font-weight: 500;
+}
+.exposant .title1 {
+    font-size: 8vw;
+    letter-spacing: 0.5vw;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    font-weight: 500;
+
+} 
+
+}
+@media (max-width:360px){
+    .container3 .title-pgm{
+        font-size: 7vw;
+        letter-spacing: 4px;
+    }
+    .container3 .subtitle-pgm {
+        font-size: 3.5vw;
+        letter-spacing: 2px;
+
+    }
+    .container3 .line-sub-pgm {
+        width: 15%;
+        height: 1.5px;
+    }
+
+}
+@media (max-width:300px){
+    .text-centered-agenda2 {
+        font-weight: 400!important;
+        padding-top: 40vw;
+        color: #e0ded2 !important;
+    }
+
+    .container02 {
+        z-index: 1;
+        height: auto;
+        margin-top: -20vw;
+    }
+
+    .container3 {
+        background: url(./../../Assets/image4.jpg);
+        background-repeat: no-repeat;
+        background-size: 190% auto;
+        background-position: 70% 0%;
+        background-attachment: fixed;
+        opacity: 0.9;
+        z-index: 25;
+    }
+
+
 }

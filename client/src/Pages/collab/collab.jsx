@@ -7,6 +7,7 @@ export default function Collab() {
         { id: 2, logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/EY_logo_2019.svg/800px-EY_logo_2019.svg.png" },
         { id: 3, logo: "https://media.licdn.com/dms/image/C560BAQE0N4qKJB0n6A/company-logo_200_200/0/1631323272759?e=2147483647&v=beta&t=2Ls7e6TyC_KT9w6RT_VVR4LBQMyIZasGIiE35lGf6ZY" },
         { id: 4, logo: "https://fabskill.s3.eu-west-3.amazonaws.com/job_visual/1670509519-884-1797.png" },
+        { id: 5, logo: "https://media.licdn.com/dms/image/C560BAQE0N4qKJB0n6A/company-logo_200_200/0/1631323272759?e=2147483647&v=beta&t=2Ls7e6TyC_KT9w6RT_VVR4LBQMyIZasGIiE35lGf6ZY" },
 
     ]
     return (
