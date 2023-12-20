@@ -254,6 +254,7 @@ position:relative
         font-size: 3vw;
         letter-spacing: 0.7vw;
         text-align: justify;
+
     }
     .whoWeAre-section1{
         display: block;
@@ -392,6 +393,11 @@ gap:2%;
     height: 2px; 
 
   }
+  .partie1 div{
+
+    line-height: 1.5;
+
+}
 
 
 

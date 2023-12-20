@@ -10,7 +10,7 @@ export default function Header() {
       <div className="container1">
         <div className="space"></div>
         <div className="date-container">
-          <FaMapMarkerAlt className="icon" />
+          <FaMapMarkerAlt className="icon1" />
           <div className="utica">UTICA,</div>
           <div className="date">24</div>
           <div className="th">th</div>

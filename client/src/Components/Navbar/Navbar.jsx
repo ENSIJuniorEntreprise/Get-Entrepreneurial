@@ -10,6 +10,13 @@ function NavBar() {
   const location = useLocation();
   const [currentPage, setCurrentPage] = useState("/");
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+  
+
   useEffect(() => {
     localStorage.setItem("current", currentPage);
   }, [currentPage]);
@@ -47,6 +54,7 @@ function NavBar() {
         onClick={() => {
           navigate("/");
           setCurrentPage("home");
+          scrollToTop()
         }}
       />
       <div
@@ -58,6 +66,8 @@ function NavBar() {
           onClick={() => {
             navigate("/");
             setCurrentPage("/");
+            scrollToTop()
+
           }}
         >
           Accueil{" "}
@@ -68,6 +78,8 @@ function NavBar() {
           onClick={() => {
             navigate("/program");
             setCurrentPage("program");
+            scrollToTop()
+
           }}
         >
           Programme{" "}
@@ -78,6 +90,8 @@ function NavBar() {
           onClick={() => {
             navigate("/collab");
             setCurrentPage("collab");
+            scrollToTop()
+
           }}
         >
           Partenaires{" "}
@@ -88,6 +102,8 @@ function NavBar() {
           onClick={() => {
             navigate("/Register");
             setCurrentPage("Register");
+            scrollToTop()
+
           }}
         >
           Inscription{" "}

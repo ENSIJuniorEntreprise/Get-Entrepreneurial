@@ -193,9 +193,9 @@
 }
 
 @media (max-width:734px) {
-    .text-centered-agenda2 {
+    .container4 .text-centered-agenda2 {
         font-weight: 400!important;
-        padding-top: 22vw;
+        padding-top: 14vw!important;
         color: #e0ded2 !important;
     }
 

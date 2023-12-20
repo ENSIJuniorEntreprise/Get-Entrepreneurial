@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Photograph Signature';
     src: url(./Assets/fonts/Photograph\ Signature.ttf) format('truetype');
 }
@@ -31,4 +31,37 @@
 }
 body {
     font-family: 'Montserrat', sans-serif !important;
-  }
+  } */
+
+ .loader{
+    background-color: #E0DED2;
+} 
+
+
+.loaderImg{
+    position: absolute;
+    top: 51%;
+    left: 50.25%;
+    transform: translate(-50%, -50%);
+    width:150px;
+    height: auto;
+}
+
+@media(max-width:600px){
+    .loaderImg{
+    width: 120px;
+    left: 51%;
+
+
+}
+} 
+@media(max-width:340px){
+    .loaderImg{
+    width: 90px;
+    top: 50.75%;
+    left: 51%;
+
+
+}
+} 
+

@@ -92,7 +92,7 @@
     font-family: 'Proxima Nova Bold';
 }
 
-.icon,
+.icon1,
 .utica,
 .date,
 .th,
@@ -102,7 +102,7 @@
 
 }
 
-.icon,
+.icon1,
 .date,
 .th {
     color: #FE9900;
@@ -183,7 +183,7 @@
         width: 15%;
     }
 
-    .icon,
+    .icon1,
     .utica,
     .date,
     .th,
@@ -354,7 +354,7 @@
         padding: 1vw 6vw;
         font-size: 15px;
     }
-    .icon,
+    .icon1,
     .utica,
     .date,
     .th,
@@ -391,7 +391,7 @@
         padding: 1vw 6vw;
         font-size: 15px;
     }
-    .icon,
+    .icon1,
     .utica,
     .date,
     .th,
@@ -444,7 +444,7 @@
         padding: 1vw 6vw;
         font-size: 15px;
     }
-    .icon,
+    .icon1,
     .utica,
     .date,
     .th,

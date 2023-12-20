@@ -223,43 +223,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width:1000px) {
-    .lien {
-        white-space: nowrap;
-        overflow: visible;
-    }
-
-    .footer_container {
-        display: grid;
-        grid-template-columns: 35% 19% 20% 19%;
-        align-items: center;
-        overflow: hidden;
-        gap: 2%;
-        padding-right: 3%;
-    }
-
-    .logo-img {
-        width: 70%;
-    }
-
-} */
-
 @media (max-width:950px) {
     .lien {
         white-space: nowrap;
@@ -334,8 +297,8 @@
         padding-left: initial;
     }
 
-    .logo-img {
-        width: 60%;
+    .logo-img1 {
+        width: 50%;
     }
 
     div.para {
@@ -437,11 +400,6 @@
 
     .icones {
         width: 100%;
-    }
-
-    .backToTop {
-        font-size: 2vw;
-
     }
 
     .footer .copy {
@@ -627,6 +585,9 @@
     .footer .copy {
         font-size: 2.8vw;
 
+    }
+    .logo-img1 {
+        width: 80%;
     }
 
 }
