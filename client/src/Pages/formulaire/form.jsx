@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBInput } from "mdbreact";
+import Swal from 'sweetalert2';
 import { Button } from '@mui/material';
 import { Alert } from 'react-bootstrap';
 import axios from "axios";
@@ -85,6 +85,13 @@ function Form() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    Swal.fire({
+      text: "Vous êtes inscrit avec succès",
+      icon: 'success',
+      confirmButtonColor: '#FE9900',
+
+    })
+
 
     /*const data = new FormData();
     data.append('CV', CV[0]);
@@ -551,7 +558,7 @@ function Form() {
                       </div>
                     </>
                   )}
-                  
+
                   {Status === "Employé" && (
                     <>
                       <div className="form-group">
@@ -710,12 +717,11 @@ function Form() {
                     </label>
                     {CV && (
                       <div className="valid-feedback">
-                        {/* Success message */}
+                            {CV[0].name}
                       </div>
                     )}
                     {!CV && (
                       <div className="invalid-feedback">
-                        {/* Error message */}
                       </div>
                     )}
                   </div>

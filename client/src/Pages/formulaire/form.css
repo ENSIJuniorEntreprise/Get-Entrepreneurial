@@ -163,6 +163,15 @@ input[type="file"] {
 .custom-control-label{
   font-size: 1.25vw;
 }
+.cv {
+  position: relative;
+}
+
+.valid-feedback, .invalid-feedback {
+  position: absolute;
+  color: green; 
+}
+
 
 
  @media (max-width:1250px) {

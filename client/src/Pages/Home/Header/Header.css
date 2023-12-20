@@ -55,7 +55,39 @@
     font-family: 'Photograph Signature', sans-serif;
     margin-bottom: 0.7%;
 }
-
+/* Add this to your existing CSS or create a new CSS file */
+.subtitle0 {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Adjust the duration as needed */
+  }
+  
+  .line {
+    animation: growLine 2s forwards; /* Adjust the duration as needed */
+  }
+  
+  .slogan {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Adjust the duration and delay as needed */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes growLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+  
 .logo2 {
     width: 9%;
     height: auto;

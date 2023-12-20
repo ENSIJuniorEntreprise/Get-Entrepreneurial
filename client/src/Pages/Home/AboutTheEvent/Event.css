@@ -188,6 +188,7 @@
     line-height: normal;
     letter-spacing: 24px;
 }
+
 @media (max-width:1200px){
     
     .timer-container {
