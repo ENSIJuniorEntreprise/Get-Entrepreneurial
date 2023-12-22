@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import { BiAlarm } from "react-icons/bi";
 import {
     VerticalTimeline,
@@ -7,8 +7,11 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import "./Program.css";
 function Program() {
+
+
     return (
         <React.Fragment>
+
             <div className="body-timeline">
                 <div className="container01">
                     <div className="container2">

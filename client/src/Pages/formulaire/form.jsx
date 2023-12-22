@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserTie, faEnvelope, faPhone, faCalendarDays, faFileAlt, faUpload, faVenusMars, faLocationDot, faUser, faBriefcase, faStar, faBuildingColumns, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 function Form() {
-  // const baseURL = "https://backforum.ensi-junior-entreprise.net/inscription";
+  const baseURL = "http://localhost:8000/inscription";
   const [loading, setLoading] = useState(false);
   const [ShowFail, setShowFail] = useState(false);
   const myRef = useRef(null)
@@ -41,6 +41,7 @@ function Form() {
 
   const [CV, setCV] = useState('');
 
+  console.log(CV)
   const [ResponseMessage, setResponseMessage] = useState({})
 
   const handleNomChange = (event) => {
@@ -85,29 +86,28 @@ function Form() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    Swal.fire({
-      text: "Vous êtes inscrit avec succès",
-      icon: 'success',
-      confirmButtonColor: '#FE9900',
-
-    })
 
 
-    /*const data = new FormData();
+    const data = new FormData();
     data.append('CV', CV[0]);
     data.append('Nom', Nom)
     data.append('Prenom', Prenom)
     data.append('Email', Email)
+    data.append('Phone', Phone)
     data.append('Birthday', Birthday)
+    data.append('Genre', Genre)
+    data.append('Region', Region)
     data.append('Status', Status)
     data.append('Universite', Universite)
     data.append('Classe', Classe)
+    data.append('DomaineExpertise', DomaineExpertise)
+    data.append('NiveauExperience', NiveauExperience)
     data.append('Partage', Partage)
     setLoading(true)
     axios
       .post(baseURL, data, {
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "multipart/form-data",  
         },
       })
       .then((response) => {
@@ -117,7 +117,7 @@ function Form() {
 
         // eslint-disable-next-line no-lone-blocks
         {
-          swal.fire({
+          Swal.fire({
             text: "Vous êtes inscrit avec succès au 16ème édition du forum annuel de l'ENSI",
             icon: 'success',
             confirmButtonColor: '#2ea3dd',
@@ -133,7 +133,7 @@ function Form() {
         setTimeout(() => setShowFail(false), 2000)
 
       });
-*/
+
   };
 
   return (

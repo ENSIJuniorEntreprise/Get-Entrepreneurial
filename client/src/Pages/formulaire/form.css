@@ -1,6 +1,6 @@
 .container4 .text-centered-agenda2{
   font-weight: 400!important;
-  padding-top: 15vw!important;
+  padding-top: 15vw;
   color: #E0DED2 !important;;
 }
 
@@ -60,6 +60,8 @@
   text-align: center;
   width: 100%;
 }
+
+
 .NomPrenom {
   display: flex;
   gap: 4%;
@@ -171,6 +173,21 @@ input[type="file"] {
   position: absolute;
   color: green; 
 }
+
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){
+  padding: initial!important;
+}
+
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
+   background-color: #fe9900 !important;
+}
+
+.swal2-success-ring,div:where(.swal2-icon).swal2-success{
+  border-color: rgba(254, 153, 0, 0.3)!important;
+
+
+}
+
 
 
 
@@ -331,7 +348,7 @@ input[type="file"] {
 @media (max-width:734px) {
   .container4 .text-centered-agenda2 {
       font-weight: 400!important;
-      padding-top: 22vw;
+      padding-top: 14vw;
       color: #e0ded2 !important;
   }
 }
@@ -350,7 +367,10 @@ input[type="file"] {
       width: 15%;
       height: 3px;
   }
-
+  div:where(.swal2-container) div:where(.swal2-popup) {
+    width: 60%!important;
+    height: 280px !important;
+  }
 
 }
 @media (max-width:650px) {
@@ -393,15 +413,12 @@ gap:2%;
   }
   .container4 .text-centered-agenda2 {
     font-weight: 400!important;
-    padding-top: 30vw;
+    padding-top: 22vw;
     color: #e0ded2 !important;
   }
   .container03 {
     margin-top: -14vw;
     z-index: 1;
-  }
-  .container4 .text-centered-agenda2{
-    padding-top: 30vw!important;
   }
 
 }
@@ -453,6 +470,10 @@ gap:2%;
 
     
   }
+  div:where(.swal2-container) div:where(.swal2-popup) {
+    width: 80%!important;
+    height: 350px !important;
+  }
 
 
 }
@@ -476,9 +497,7 @@ gap:2%;
 
 @media (max-width:400px){
   .container4 .text-centered-agenda2 {
-      font-weight: 400!important;
-      padding-top: 38vw!important;
-      color: #e0ded2 !important;
+    padding-top: 22vw;
   }
   .container03 {
     margin-top: -18vw;
@@ -536,9 +555,9 @@ gap:2%;
 
 @media (max-width:300px){
   .container4 .text-centered-agenda2 {
-      font-weight: 400!important;
-      padding-top: 40vw;
-      color: #e0ded2 !important;
+    font-weight: 400!important;
+    padding-top: 30vw;
+    color: #e0ded2 !important;
   }
   .container03 {
     margin-top: -20vw;

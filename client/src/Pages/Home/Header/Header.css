@@ -58,7 +58,7 @@
 /* Add this to your existing CSS or create a new CSS file */
 .subtitle0 {
     opacity: 0;
-    animation: fadeIn 2s forwards; /* Adjust the duration as needed */
+    animation: fadeIn 1s forwards; /* Adjust the duration as needed */
   }
   
   .line {
@@ -67,7 +67,7 @@
   
   .slogan {
     opacity: 0;
-    animation: fadeIn 2s forwards; /* Adjust the duration and delay as needed */
+    animation: fadeIn 1s forwards; /* Adjust the duration and delay as needed */
   }
   
   @keyframes fadeIn {

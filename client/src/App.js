@@ -8,7 +8,12 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Spinner from './Components/Spinner/spinner';
 import loader from './Assets/loader.png'
+import LoginForm from './LoginForm';
+import {AuthProvider } from './AuthContext';
+import PrivateRoute from './PrivateRoute';
+
 import './App.css'
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 function Loader() {
   return (
@@ -22,13 +27,12 @@ function Loader() {
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
+
+
   useEffect(() => {
-    // Simulating an asynchronous task (e.g., API call) that takes some time
     const fetchData = async () => {
-      // Add your asynchronous logic here (e.g., fetching data)
-      // For now, using a setTimeout to simulate loading time
       await new Promise((resolve) => setTimeout(resolve, 2000));
-      setIsLoading(false); // Set loading to false when done
+      setIsLoading(false);
     };
 
     fetchData();
@@ -39,23 +43,24 @@ function App() {
   }
 
   return (
-    <>
+    <AuthProvider>
       <Router>
         <Navbar />
         <Routes>
-
-
           <Route path="/" element={<Home />} />
           <Route path="/program" element={<Program />} />
-          <Route path="/collab" element={<Collab />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route element={<PrivateRoute />}>
+                <Route element={<Dashboard/>} path="/Dash"/>
+            </Route>
+          <Route element={<Collab/>} path="/Collab"/>
           <Route path="/Register" element={<Form />} />
-
-
         </Routes>
         <Footer />
       </Router>
-    </>
+    </AuthProvider>
   );
 }
+
 
 export default App;
