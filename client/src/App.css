@@ -33,35 +33,23 @@ body {
     font-family: 'Montserrat', sans-serif !important;
   } */
 
- .loader{
-    background-color: #E0DED2;
-} 
-
-
-.loaderImg{
-    position: absolute;
-    top: 51%;
-    left: 50.25%;
-    transform: translate(-50%, -50%);
-    width:120px;
-    height: auto;
+  @font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url(./Assets/fonts/ProximaNova-Regular.otf) format('truetype');
+}
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url(./Assets/fonts/Gilroy-Light.otf) format('truetype');
+}
+@font-face {
+    font-family: 'Gilroy ExtraBold';
+    src: url(./Assets/fonts/Gilroy-ExtraBold.otf) format('truetype');
+}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url(./Assets/fonts/Proxima\ Nova\ Bold.otf) format('truetype');
 }
 
-@media(max-width:600px){
-    .loaderImg{
-    width: 120px;
-    left: 51%;
-
-
+*{
+    font-family: 'Proxima Nova Regular' ;
 }
-} 
-@media(max-width:340px){
-    .loaderImg{
-    width: 90px;
-    top: 50.75%;
-    left: 51%;
-
-
-}
-} 
-

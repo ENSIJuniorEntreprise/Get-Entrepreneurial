@@ -15,7 +15,7 @@ const inscrptionSchema = new Schema({
     Classe: {type: Number, required:false},
     DomaineExpertise : {type: String, required:false},
     NiveauExperience: {type: String, required:false},
-    Partage: {type: Boolean, required:true},
+    Partage: {type: Boolean},
 
     CV: {type: String, required:false},
     

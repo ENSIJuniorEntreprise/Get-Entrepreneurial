@@ -8,11 +8,9 @@ router.use(express.json());
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        console.log('File Destination:', './CV');
-        cb(null, './CV');
+        cb(null, './Uploads/CV');
     },
     filename: function (req, file, cb) {
-        console.log('Original Filename:', file.originalname);
         cb(null, file.originalname);
     }
 });
@@ -20,12 +18,11 @@ const storage = multer.diskStorage({
 const upload = multer({
     storage: storage,
 });
-
-router.use('/CV', express.static(path.join(__dirname, 'CV')));
+router.use('/Uploads/CV', express.static(path.join(__dirname, '/Uploads/CV')));
 
 router.get('/CV/:filename', (req, res) => {
     const filename = req.params.filename;
-    const filePath = path.join(__dirname, '../CV', filename);
+    const filePath = path.join(__dirname, '../Uploads/CV', filename);
     console.log('File Path:', filePath);
 
     res.sendFile(filePath, (err) => {
@@ -35,31 +32,7 @@ router.get('/CV/:filename', (req, res) => {
         }
     });
 });
-
-
-
-// Display CV content
-router.get('/cv-content/:id', (req, res) => {
-    const inscriptionId = req.params.id;
   
-    Inscr.findById(inscriptionId, (err, document) => {
-      if (err) {
-        console.error(err);
-        res.status(500).json({ error: 'Internal Server Error' });
-      } else {
-        if (!document) {
-          res.status(404).json({ error: 'Inscription not found' });
-        } else {
-          const cvContent = document.CV;
-          // Assuming you want to send CV content as JSON
-          res.json({ cvContent });
-        }
-      }
-    });
-  });
-  
-
-
 
 
 router.get("/", (req, res) => {

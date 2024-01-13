@@ -7,10 +7,9 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import "./Program.css";
 function Program() {
-
-
+    
+     
     return (
-        <React.Fragment>
 
             <div className="body-timeline">
                 <div className="container01">
@@ -146,9 +145,7 @@ function Program() {
                     </VerticalTimeline>
                 </div>
             </div>
-
-        </React.Fragment>
-    );
+            );
 }
 
 export default Program;

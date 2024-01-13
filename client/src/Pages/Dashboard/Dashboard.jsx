@@ -1,4 +1,3 @@
-// Dashboard.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Dashboard.css'; // Import the CSS file
@@ -46,14 +45,13 @@ function Dashboard() {
       });
   };
   
-  
-
   return (
     <div className="dashboard-container">
       <h1>Dashboard</h1>
       <table className="inscription-table">
         <thead>
           <tr>
+            <th>#</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
@@ -62,17 +60,16 @@ function Dashboard() {
             <th>Gender</th>
             <th>Region</th>
             <th>Status</th>
-            <th>University</th>
-            <th>Class</th>
-            <th>Expertise</th>
-            <th>Experience Level</th>
+            <th>University-Class</th>
+            <th>Expertise-Experience Level</th>
             <th>Sharing Permission</th>
             <th>Action</th>
           </tr>
         </thead>
         <tbody>
-          {inscriptions.map((inscription) => (
+          {inscriptions.map((inscription, index) => (
             <tr key={inscription._id}>
+              <td>{index + 1}</td>
               <td>{inscription.Nom} </td>
               <td>{inscription.Prenom}</td>
               <td>{inscription.Email}</td>
@@ -81,13 +78,11 @@ function Dashboard() {
               <td>{inscription.Genre}</td>
               <td>{inscription.Region}</td>
               <td>{inscription.Status}</td>
-              <td>{inscription.Universite}</td>
-              <td>{inscription.Classe}</td>
-              <td>{inscription.DomaineExpertise}</td>
-              <td>{inscription.NiveauExperience}</td>
+              <td>{inscription.Universite}-{inscription.Classe}</td>
+              <td>{inscription.DomaineExpertise}-{inscription.NiveauExperience}</td>
               <td>{inscription.Partage ? 'Yes' : 'No'}</td>
               <td>
-                <button  onClick={() => handleCVClick(inscription.CV)}>View CV</button>
+                <button onClick={() => handleCVClick(inscription.CV)}>View CV</button>
                 <button className="delete-button" onClick={() => handleDeleteClick(inscription.Email)}>Delete</button>
               </td>
             </tr>

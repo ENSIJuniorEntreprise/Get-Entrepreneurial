@@ -13,14 +13,13 @@
    
 
 }
-/* Add this to your existing CSS or create a new CSS file */
 .subtitle-pgm {
     opacity: 0;
-    animation: fadeIn 2s forwards; /* Adjust the duration as needed */
+    animation: fadeIn 2s forwards;
   }
   
   .line-sub-pgm {
-    animation: growLine 2s forwards; /* Adjust the duration as needed */
+    animation: growLine 2s forwards;
   }
   
   @keyframes fadeIn {
@@ -52,9 +51,32 @@
     
  }
 
+
+ .sous{
+    color:#1F212D;
+    text-align: center;
+    font-size: x-large;
+    letter-spacing: 3px;
+    padding-bottom: 3%; 
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 1%;
+    
+ }
+ .sous1{
+    color:#9FC8D4;
+    text-align: center;
+    font-size: x-large;
+    letter-spacing: 3px;
+    padding-bottom: 3%; 
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 1%;
+    
+ }
   .jobs-offer {
-    padding-top: 1.5vw;
-    padding-bottom: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
     background-color: #E0DED2;
 }
 
@@ -63,40 +85,51 @@
     text-align: center;
     font-size: 4vw;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 9px;
     font-family: 'Proxima Nova ExtraBold';
-    padding-bottom: 3%;
+    padding-bottom: 1%; 
+    padding-top: 1%; 
+
+    position: relative;
+    
 }
+
 .jobs{
     display: grid;
     grid-template-columns: 15% 15% 15% 15% 15%;
     gap:5vw;
     justify-content:center;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 .ally {
     position: relative;
-    width: 100%;
-    gap:5%;
-    height: 18.5vw;
-    border: 3px solid #FE9900;
+    width: 90%;
+    gap: 5%;
+    height: 16vw;
     overflow: hidden;
 }
 
- .allyphoto {
+.cadre {
+    position: relative; 
+    border: 3px solid #1F212D;
+    height: 10.2vw;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.allyphoto {
     width: 100%;
     height: auto;
     object-fit: cover; 
     position: absolute;
-    top: 33%;
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-bottom: 1vw; 
-} 
-
+    z-index: 1; 
+}
 
 .alliesCont {
     position: absolute;
@@ -105,48 +138,52 @@
     background-color: rgba(224, 222, 210, 0.9);
     display: flex;
     flex-direction: column;
-    gap:0.5vw;
-    padding: 0.25vw;
+    gap: 0.3vw;
     box-sizing: border-box;
 }
 
+
 .btn1,
 .btn2 {
-    border: 2px solid #FE9900;
-    color: #FE9900;
+    border: 2px solid #1F212D;
+    color: #1F212D;
     background-color: transparent;
     font-size: 1.25vw;
-    padding: 0.45vw 1.5vw;
+    /* padding: 0.45vw 1.5vw; */
     cursor: pointer;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.1vw;
     white-space: nowrap;
 }
 
 .btn2 {
-    border-color: #FE9900;
-    background-color: #FE9900;
+    border-color: #1F212D;
+    background-color: #1F212D;
     color: #E0DED2;
 }
 .exposant{
     background-color: #1F212D;
-    padding-top: 1.5vw;
-    padding-bottom: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
 }
 .exposant .title1 {
     color: #9FC8D4;
     text-align: center;
     font-size: 4vw;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 9px;
     font-family: 'Proxima Nova ExtraBold';
-    padding-bottom: 3%;
+    padding-bottom: 1%;
+    padding-top: 2%;
 }
 .exp {
     position: relative;
     width: 100%;
-    height: 13vw;
+    height: 10vw;
     border: 3px solid #9FC8D4;
     background-color: #E0DED2;
     overflow: hidden;
@@ -163,12 +200,21 @@
 }
 .sponsor {
     position: relative;
-    width: 100%;
-    height: 13vw;
-    border: 3px solid #FE9900;
+    width: 90%;
+    height: 10.5vw;
+    border: 3px solid #1F212D;
     background-color: #E0DED2;
     overflow: hidden;
+
 }
+
+.s{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    gap:3.15vw;
+
+}
+
 .sponsorPhoto {
     width: 100%;
     height: auto;
@@ -178,6 +224,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
     
+}
+@media (max-width:1325px) {
+    .ally{
+        height:16.5vw;
+     }
+
+}
+@media (max-width:1100px) {
+    .ally{
+        height:16.75vw;
+     }
+
+}
+@media (max-width:1050px) {
+    .ally{
+        height:17.25vw;
+     }
+
 }
 @media (max-width:950px) {
 
@@ -201,12 +265,15 @@
     .ally {
         position: relative;
         width: 100%;
-        height: 24vw;
-        border: 3px solid #FE9900;
+        height: 25vw;
+        /* border: 3px solid #FE9900; */
         overflow: hidden;
     }
+    .cadre{
+        height: 17vw;
+    }
     .exp,.sponsor{
-        height: 18vw;
+        height: 16vw;
     }
     .btn1,
 .btn2 {
@@ -216,7 +283,23 @@
     letter-spacing: 0.2vw;
 
 }
+.sous,.sous1{
+    font-size: 2.5vw;
+    padding-bottom: 3%;
+}
 
+}
+@media(max-width:790px){
+    .ally {
+        position: relative;
+        width: 100%;
+        height: 25.75vw;
+        /* border: 3px solid #FE9900; */
+        overflow: hidden;
+    }
+    .cadre{
+        height: 17vw;
+    }
 }
 
 @media (max-width:734px) {
@@ -250,14 +333,14 @@
     .jobs-offer .title1,.exposant .title1 {
         font-size: 5vw;
         letter-spacing: 7px;
-        padding-bottom: 3%;
-        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-top: 3%;
 
     }
     .exposant .title1 {
         font-size: 5vw;
         letter-spacing: 7px;
-        padding-bottom: 3%;
+        padding-bottom: 1%;
     } 
 }
 @media (max-width:700px){
@@ -321,12 +404,15 @@ gap:2%;
     .ally {
         position: relative;
         width: 100%;
-        height: 32vw;
-        border: 3px solid #FE9900;
+        height: 34.25vw;
+        /* border: 3px solid #FE9900; */
         overflow: hidden;
     }
+    .cadre{
+        height: 22.5vw;
+    }
     .exp,.sponsor{
-        height: 24vw;
+        height: 21vw;
     }
     .btn1,
 .btn2 {
@@ -339,17 +425,24 @@ gap:2%;
 .jobs-offer .title1,.exposant .title1 {
     font-size: 6vw;
     letter-spacing: 0.75vw;
-    padding-bottom: 3%;
-    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-top: 3%;
 
 }
 .exposant .title1 {
     font-size: 6vw;
     letter-spacing: 0.75vw;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 .jobs-offer,.exposant {
     padding-bottom: 4vw;
+}
+.sous,.sous1{
+    font-size: 3.25vw;
+    padding-bottom: 5vw;
+}
+.sous1{
+    max-width: 100%;
 }
  
 
@@ -417,12 +510,15 @@ gap:2%;
     .ally {
         position: relative;
         width: 100%;
-        height: 40vw;
-        border: 3px solid #FE9900;
+        height: 43.5vw;
+        /* border: 3px solid #FE9900; */
         overflow: hidden;
     }
+    .cadre{
+        height: 30vw;
+    }
     .exp,.sponsor{
-        height: 32vw;
+        height: 28vw;
     }
     .btn1,
 .btn2 {
@@ -435,18 +531,21 @@ gap:2%;
 .jobs-offer .title1,.exposant .title1 {
     font-size: 8vw;
     letter-spacing: 0.75vw;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     padding-top: 3%;
     font-weight: 500;
 }
 .exposant .title1 {
     font-size: 8vw;
     letter-spacing: 0.5vw;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     padding-top: 3%;
     font-weight: 500;
 
 } 
+.exposant{
+    padding-bottom: 7vw;
+}
 
 }
 @media (max-width:360px){
@@ -462,6 +561,9 @@ gap:2%;
     .container3 .line-sub-pgm {
         width: 15%;
         height: 1.5px;
+    }
+    .sous,.sous1{
+        font-size: 3.75vw;
     }
 
 }
@@ -487,6 +589,10 @@ gap:2%;
         opacity: 0.9;
         z-index: 25;
     }
+    .ally{
+       height:44vw;
+    }
+    
 
 
 }

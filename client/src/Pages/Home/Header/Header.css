@@ -22,7 +22,7 @@
 
 .Header-Event {
     color: #E0DED2;
-    font-family: 'Proxima Nova ExtraBold';
+    font-family: 'Gilroy ExtraBold';
     font-size: 8.5vw;
     font-style: normal;
     font-weight: 600;
@@ -33,6 +33,8 @@
 
 .get {
     color: #FE9900;
+    font-family: 'Gilroy ExtraBold';
+
 }
 
 .subtitle0 {
@@ -111,11 +113,28 @@
     letter-spacing: 1.92px;
     position: absolute;
     top: 77%;
-    left: 50%;
+    left: 37.65vw;
     transform: translate(-50%, -50%);
     cursor:pointer;
-}
+    animation: blobBounce 1s infinite alternate;
 
+}
+.subscribe:hover {
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+  }
+
+  
+@keyframes blobBounce {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
 
 .date-container {
     display: flex;
@@ -158,13 +177,16 @@
         left: 90%;
         transform: translate(-50%, -50%);
     }
+    .subscribe {
+        left: 36.5%;
+    }
 }
 
 @media (max-width:950px) {
     .subscribe {
         position: absolute;
         top: 78%;
-        left: 50%;
+        left: 35%;
         transform: translate(-50%, -50%);
     }
 
@@ -192,7 +214,7 @@
 @media (max-width:800px) {
     .subscribe {
         position: absolute;
-        left: 50%;
+        left: 33%;
         transform: translate(-50%, -50%);
     }
 
@@ -247,7 +269,7 @@
 @media (max-width:700px) {
     .subscribe {
         position: absolute;
-        left: 50%;
+        left: 32%;
         transform: translate(-50%, -50%);
     }
 }
@@ -256,7 +278,7 @@
 @media (max-width:650px) {
     .subscribe {
         position: absolute;
-        left: 50%;
+        left: 31%;
         transform: translate(-50%, -50%);
     }
 
@@ -307,6 +329,7 @@
     .subscribe {
         padding: 1vw 6vw;
         font-size: 20px;
+        left: 30%;
     }
     .Header-Event {
         font-size: 7vw;
@@ -343,6 +366,7 @@
         top:80%;
         padding: 1vw 6vw;
         font-size: 20px;
+        left: 31%;
     }
     .space{
         height: 40%;
@@ -385,6 +409,8 @@
         top:83%;
         padding: 1vw 6vw;
         font-size: 15px;
+        left: 31%;
+
     }
     .icon1,
     .utica,
@@ -422,6 +448,7 @@
         top:80%;
         padding: 1vw 6vw;
         font-size: 15px;
+        left: 30%;
     }
     .icon1,
     .utica,
@@ -472,9 +499,10 @@
         height: 40%;
     }
     .subscribe {
-        top:81%;
+        top:78%;
         padding: 1vw 6vw;
         font-size: 15px;
+        left: 25vw;
     }
     .icon1,
     .utica,

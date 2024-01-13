@@ -24,11 +24,14 @@
     font-size: 40px;
     padding-bottom: 20%;
     font-family: 'Photograph Signature', sans-serif;
+    padding-left: 10%;
+
 }
 
 .footer-contact h3 {
     white-space: nowrap;
     overflow: visible;
+
 }
 
 
@@ -52,11 +55,14 @@
     width: 80%;
     height: auto;
     padding-top: 3%;
+    padding-left: 10%;
 
 }
 
 .footer-contact {
     text-align: center;
+    font-size: medium;
+
 }
 
 
@@ -135,10 +141,9 @@
     color: #E0DED2;
     margin-left: -38px;
     margin-top: 5px;
-    font-size: 14px;
     letter-spacing: 1px;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 15px;
     font-style: normal;
     line-height: normal;
     letter-spacing: 2px;
@@ -159,7 +164,7 @@
     text-align: center;
     margin-bottom: 5px;
     justify-content: center;
-    font-size: 12px;
+    font-size: 15px;
     font-style: normal;
     line-height: normal;
     letter-spacing: 2px;
@@ -173,7 +178,6 @@
 }
 
 .social .footer-a {
-
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -195,7 +199,9 @@
 }
 
 .part22 {
-    margin-left: 20%;
+    margin-left: 60%;
+    text-align: center;
+    font-size: medium;
 }
 
 .footer .copy {
@@ -221,7 +227,16 @@
     top: 0;
     left: 5%;
 }
-
+@media (max-width:1100px) {
+    .part22 {
+        margin-left: 30%;
+        text-align: center;
+        font-size: medium;
+    }
+    .footer_container{
+        padding-bottom: 10px;
+    }
+}
 
 @media (max-width:950px) {
     .lien {
@@ -236,6 +251,9 @@
 
     .logo-img {
         width: 100%;
+    }
+    .footer-a,.span .footer-span{
+        font-size: small;
     }
 
 } 
@@ -281,6 +299,9 @@
         margin: 10px 10px 10px 0px;
         color: #050727;
     }
+    .footer-a,.span .footer-span{
+        font-size: 12px;
+    }
 
 }
 
@@ -299,6 +320,8 @@
 
     .logo-img1 {
         width: 50%;
+        padding-left: inherit;
+
     }
 
     div.para {
@@ -310,6 +333,8 @@
     }
     .slogann{
         padding-bottom: inherit;
+        padding-left: inherit;
+
     }
 
 
@@ -329,6 +354,7 @@
         height: 30px;
         white-space: nowrap;
         overflow: visible;
+        margin-left: 29vw;
     }
 
     .part22 ul {
@@ -409,6 +435,15 @@
 
 }
 
+@media (max-width:600px) {
+    .part22 {
+        width: 100%;
+        height: 30px;
+        white-space: nowrap;
+        overflow: visible;
+        margin-left: 22vw;
+    }
+}
 
 @media (max-width:470px) {
 

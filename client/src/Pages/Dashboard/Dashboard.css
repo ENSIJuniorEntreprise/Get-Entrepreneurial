@@ -1,13 +1,14 @@
 /* Dashboard.css */
 .dashboard-container {
     /* max-width: 800px; */
-    padding-left: 80px;
     padding-right: 100px;
     margin: 0 auto;
+    padding-left: 1%;
+
   }
   
   .inscription-table {
-    width: 100%;
+    width: 90vw;
     border-collapse: collapse;
     margin-top: 20px;
   }

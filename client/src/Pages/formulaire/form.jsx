@@ -13,8 +13,11 @@ function Form() {
   const baseURL = "http://localhost:8000/inscription";
   const [loading, setLoading] = useState(false);
   const [ShowFail, setShowFail] = useState(false);
+  // const [formSubmitted, setFormSubmitted] = useState(false);
   const myRef = useRef(null)
   const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const [submitStatus, setSubmitStatus] = useState(null);
+
 
   const [Nom, setNom] = useState('');
   const [Prenom, setPrenom] = useState('');
@@ -28,6 +31,19 @@ function Form() {
   const [Classe, setClasse] = useState('');
   const [DomaineExpertise, setDomaineExpertise] = useState('');
   const [NiveauExperience, setNiveauExperience] = useState('');
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^(\+\d{1,3}[- ]?)?\d{8}$/;
+
+  const validateEmail = (email) => {
+    return emailRegex.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    return phoneRegex.test(phone);
+  };
+
+
 
   const handleDomaineExpertiseChange = (event) => {
     setDomaineExpertise(event.target.value);
@@ -84,9 +100,30 @@ function Form() {
     setCV(event.target.files);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
+    // setFormSubmitted(true); 
+
     event.preventDefault();
 
+    if (
+      !validateEmail(Email) ||
+      !validatePhone(Phone) ||
+      !Nom ||
+      !Prenom ||
+      !Email ||
+      !Phone ||
+      !Birthday ||
+      !Genre ||
+      !Region ||
+      !Status ||
+      (Status === "Etudiant" && (!Universite || !Classe)) ||
+      ((Status === "Diplome" || Status === "Employé") && (!DomaineExpertise || !NiveauExperience))
+    ) {
+      setSubmitStatus({ message: 'Veuillez remplir soigneusement tous les champs obligatoires', type: 'error' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    
 
     const data = new FormData();
     data.append('CV', CV[0]);
@@ -104,37 +141,72 @@ function Form() {
     data.append('NiveauExperience', NiveauExperience)
     data.append('Partage', Partage)
     setLoading(true)
-    axios
-      .post(baseURL, data, {
+    try{
+      const response = await axios.post(baseURL, data, {
         headers: {
-          "Content-Type": "multipart/form-data",  
+          "Content-Type": "multipart/form-data",
         },
       })
-      .then((response) => {
+      if (response.status === 200) {
         setLoading(false)
-        setResponseMessage(response.data)
-        //console.log(ResponseMessage)
-
-        // eslint-disable-next-line no-lone-blocks
+        setNom('')
+        setPrenom('')
+        setBirthday('')
+        setCV('')
+        setClasse('')
+        setDomaineExpertise('')
+        setNiveauExperience('')
+        setEmail('')
+        setGenre('')
+        setPartage(false)
+        setPhone('')
+        setRegion('')
+        setStatus('')
+        setUniversite('')
         {
           Swal.fire({
-            text: "Vous êtes inscrit avec succès au 16ème édition du forum annuel de l'ENSI",
+            text: "Vous êtes inscrit avec succès.",
             icon: 'success',
             confirmButtonColor: '#2ea3dd',
 
           })
         }
+        setSubmitStatus(null);
+        
+    }
+  } catch (error) {
+    setLoading(false);
+  
+    if (error.response && error.response.status === 422) {
+      Swal.fire({
+        text: "Vous êtes déjà inscrit.",
+        icon: 'success',
+        confirmButtonColor: '#2ea3dd',
 
-      }).catch(() => {
-        setLoading(false)
-
-        setShowFail(true)
-        executeScroll()
-        setTimeout(() => setShowFail(false), 2000)
-
-      });
-
-  };
+      })
+      setSubmitStatus(null);
+      setNom('')
+      setPrenom('')
+      setBirthday('')
+      setCV('')
+      setClasse('')
+      setDomaineExpertise('')
+      setNiveauExperience('')
+      setEmail('')
+      setGenre('')
+      setPartage(false)
+      setPhone('')
+      setRegion('')
+      setStatus('')
+      setUniversite('')
+    } else {
+      // For other errors
+      console.error(error);
+      setSubmitStatus({ message: 'Error', type: 'error' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+}
 
   return (
     <div ref={myRef}>
@@ -151,9 +223,10 @@ function Form() {
             <div className="formBox">
               <div className="sous-titre">#Forge_The_Future</div>
 
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit}  ref={myRef} noValidate>
 
                 <Alert show={ShowFail} variant='danger'>Vous êtes déjà inscrit</Alert>
+                {submitStatus && <div className={`alert ${submitStatus.type}`}>{submitStatus.message}</div>}
 
                 <div className="NomPrenom">
 
@@ -173,7 +246,10 @@ function Form() {
                         value={Nom}
                         onChange={handleNomChange}
                         placeholder="Veuillez saisir votre nom"
+                        onInvalid={(e) => e.target.setCustomValidity('Veuillez saisir votre nom')}
+                        onInput={(e) => e.target.setCustomValidity('')}
                       />
+
                       {Nom && (
                         <div className="valid-feedback">
                           {/* Success message */}
@@ -181,7 +257,7 @@ function Form() {
                       )}
                       {!Nom && (
                         <div className="invalid-feedback">
-                          {/* Error message */}
+                          {/* errrooooooooooooooorrr */}
                         </div>
                       )}
                     </div>
@@ -369,10 +445,30 @@ function Form() {
                         onChange={handleRegionChange}
                       >
                         <option value="" disabled>Select Région</option>
-                        <option value="Region1">Region 1</option>
-                        <option value="Region2">Region 2</option>
-                        <option value="Region3">Region 3</option>
-                        {/* Add more regions as needed */}
+                        <option value="Ariana">Ariana</option>
+                        <option value="Béja">Béja</option>
+                        <option value="Ben Arous">Ben Arous</option>
+                        <option value="Bizerte">Bizerte</option>
+                        <option value="Gabès">Gabès</option>
+                        <option value="Gafsa">Gafsa</option>
+                        <option value="Jendouba">Jendouba</option>
+                        <option value="Kairouan">Kairouan</option>
+                        <option value="Kasserine">Kasserine</option>
+                        <option value="Kébili">Kébili</option>
+                        <option value="Le Kef">Le Kef</option>
+                        <option value="Mahdia">Mahdia</option>
+                        <option value="Manouba">Manouba</option>
+                        <option value="Médenine">Médenine</option>
+                        <option value="Monastir">Monastir</option>
+                        <option value="Nabeul">Nabeul</option>
+                        <option value="Sfax">Sfax</option>
+                        <option value="Sidi Bouzid">Sidi Bouzid</option>
+                        <option value="Siliana">Siliana</option>
+                        <option value="Sousse">Sousse</option>
+                        <option value="Tataouine">Tataouine</option>
+                        <option value="Tozeur">Tozeur</option>
+                        <option value="Tunis">Tunis</option>
+                        <option value="Zaghouan">Zaghouan</option>
                       </select>
                       {Region && (
                         <div className="valid-feedback">
@@ -478,6 +574,9 @@ function Form() {
                           <option value={1}>1ère année</option>
                           <option value={2}>2ème année</option>
                           <option value={3}>3ème année</option>
+                          <option value={4}>4ème année</option>
+                          <option value={5}>5ème année</option>
+
                         </select>
                         {Classe && (
                           <div className="valid-feedback">
@@ -510,6 +609,27 @@ function Form() {
                             onChange={handleDomaineExpertiseChange}
                           >
                             <option value="" disabled>Sélectionner le domaine d'expertise</option>
+                            <option value="Agronomie">Agronomie</option>
+                            <option value="Business">Business</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Economie">Economie</option>
+                            <option value="Electrique">Electrique</option>
+                            <option value="Electromécanique">Electromécanique</option>
+                            <option value="Embarqués">Embarqués</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Gestion">Gestion</option>
+                            <option value="Hydrolique">Hydrolique</option>
+                            <option value="Industriel">Industriel</option>
+                            <option value="Infotronique">Infotronique</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Mécanique">Mécanique</option>
+                            <option value="Mécatronique">Mécatronique</option>
+                            <option value="Réseaux">Réseaux</option>
+                            <option value="Télécom">Télécom</option>
+                            <option value="Science">Science</option>
+                            <option value="Art">Art</option>
+                            <option value="Autre">Autre</option>
                             {/* Add options based on your domain expertise */}
                           </select>
                           {DomaineExpertise && (
@@ -576,7 +696,27 @@ function Form() {
                             onChange={handleDomaineExpertiseChange}
                           >
                             <option value="" disabled>Sélectionner le domaine d'expertise</option>
-                            {/* Add options based on your domain expertise */}
+                            <option value="Agronomie">Agronomie</option>
+                            <option value="Business">Business</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Economie">Economie</option>
+                            <option value="Electrique">Electrique</option>
+                            <option value="Electromécanique">Electromécanique</option>
+                            <option value="Embarqués">Embarqués</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Gestion">Gestion</option>
+                            <option value="Hydrolique">Hydrolique</option>
+                            <option value="Industriel">Industriel</option>
+                            <option value="Infotronique">Infotronique</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Mécanique">Mécanique</option>
+                            <option value="Mécatronique">Mécatronique</option>
+                            <option value="Réseaux">Réseaux</option>
+                            <option value="Télécom">Télécom</option>
+                            <option value="Science">Science</option>
+                            <option value="Art">Art</option>
+                            <option value="Autre">Autre</option>
                           </select>
                           {DomaineExpertise && (
                             <div className="valid-feedback">
@@ -642,7 +782,27 @@ function Form() {
                             onChange={handleDomaineExpertiseChange}
                           >
                             <option value="" disabled>Sélectionner le domaine d'expertise</option>
-                            {/* Add options based on your domain expertise */}
+                            <option value="Agronomie">Agronomie</option>
+                            <option value="Business">Business</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Economie">Economie</option>
+                            <option value="Electrique">Electrique</option>
+                            <option value="Electromécanique">Electromécanique</option>
+                            <option value="Embarqués">Embarqués</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Gestion">Gestion</option>
+                            <option value="Hydrolique">Hydrolique</option>
+                            <option value="Industriel">Industriel</option>
+                            <option value="Infotronique">Infotronique</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Mécanique">Mécanique</option>
+                            <option value="Mécatronique">Mécatronique</option>
+                            <option value="Réseaux">Réseaux</option>
+                            <option value="Télécom">Télécom</option>
+                            <option value="Science">Science</option>
+                            <option value="Art">Art</option>
+                            <option value="Autre">Autre</option>
                           </select>
                           {DomaineExpertise && (
                             <div className="valid-feedback">
@@ -717,7 +877,7 @@ function Form() {
                     </label>
                     {CV && (
                       <div className="valid-feedback">
-                            {CV[0].name}
+                        {CV[0].name}
                       </div>
                     )}
                     {!CV && (

@@ -6,23 +6,16 @@ import Form from './Pages/formulaire/form';
 import Collab from './Pages/collab/collab';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
-import Spinner from './Components/Spinner/spinner';
-import loader from './Assets/loader.png'
 import LoginForm from './LoginForm';
 import {AuthProvider } from './AuthContext';
 import PrivateRoute from './PrivateRoute';
-
+import Loader from './Components/Loader/Loader';
 import './App.css'
 import Dashboard from './Pages/Dashboard/Dashboard';
+import Article from './Pages/Article/Article';
+import CollabHandler from './Pages/CollabHandler/CollabHandler';
 
-function Loader() {
-  return (
-    <div className="loader">
-      <Spinner></Spinner>
-      <img src={loader} className='loaderImg'></img>
-    </div>
-  );
-}
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,6 +45,8 @@ function App() {
           <Route path="/login" element={<LoginForm />} />
           <Route element={<PrivateRoute />}>
                 <Route element={<Dashboard/>} path="/Dash"/>
+                <Route element={<Article/>} path="/Article"/>
+                <Route element={<CollabHandler/>} path="/CollabHandler"/>
             </Route>
           <Route element={<Collab/>} path="/Collab"/>
           <Route path="/Register" element={<Form />} />

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import './Allies.css'
 import SlickSlider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 export default function Allies() {
-  const allies = [
+  const alliess = [
     { id: 1, logo: "https://pic.clubic.com/v1/images/2063553/raw" },
     { id: 2, logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/EY_logo_2019.svg/800px-EY_logo_2019.svg.png" },
     { id: 3, logo: "https://media.licdn.com/dms/image/C560BAQE0N4qKJB0n6A/company-logo_200_200/0/1631323272759?e=2147483647&v=beta&t=2Ls7e6TyC_KT9w6RT_VVR4LBQMyIZasGIiE35lGf6ZY" },
@@ -15,10 +16,27 @@ export default function Allies() {
 
   ]
 
+  const [allies, setAllies] = useState([]);
+
+  useEffect(() => {
+    // Fetch allies from the backend when the component mounts
+    const fetchAllies = async () => {
+      try {
+        const response = await axios.get("http://localhost:8000/collab");
+        setAllies(response.data);
+      } catch (error) {
+        console.error("Error fetching allies:", error);
+      }
+    };
+
+    fetchAllies();
+  }, []);
+  console.log(allies.img)
+
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
@@ -53,12 +71,18 @@ export default function Allies() {
 
       <div className="containerPartenaires">
       <SlickSlider {...settings}>
-      {
-          allies.map(ele => (
-      <div className="item">
-            <img src={ele.logo} className="image"/>
-          </div>))}
-        </SlickSlider>
+  {allies.map((ele) => (
+    <div className="item" key={ele.id}>
+      {ele.website && (
+      <a href={`${ele.website}`} target="_blank" rel="noopener noreferrer">
+      {ele.img && (
+        <img src={`http://localhost:8000/collab/collabImg/${ele.img}`} alt={`Ally ${ele.id}`} className="image" />
+      )}
+      </a>)}
+    </div>
+  ))}
+</SlickSlider>
+
       </div>
         </div>
   );

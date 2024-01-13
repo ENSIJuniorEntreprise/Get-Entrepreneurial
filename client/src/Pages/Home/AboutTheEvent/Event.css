@@ -71,7 +71,7 @@
 
 .parag {
     color: #1F212D;
-    font-family: 'Proxima Nova Extrabold';
+    font-family: 'Proxima Nova Regular';
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
@@ -172,10 +172,10 @@
 
 .time2 {
     color: #1F212D;
-    font-family: proxima-nova;
+    font-family: 'Proxima Nova Extrabold';
     font-size: 28px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 7px;
 }

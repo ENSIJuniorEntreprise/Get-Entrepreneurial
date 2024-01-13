@@ -188,7 +188,27 @@ div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
 
 }
 
-
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+  width: 86%;
+  margin-left: 25px;
+  
+}
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.input-group .valid-feedback {
+  color: #1f212dae;
+  margin-left: 0.2%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  width: 50%;
+}
 
 
  @media (max-width:1250px) {

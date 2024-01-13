@@ -72,7 +72,7 @@
     color: #1F212D;
 font-size: 1.6vw;
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
 line-height: normal;
 letter-spacing: 0.4vw;
 
@@ -118,7 +118,7 @@ position:relative
 
 .label{
     color: #1F212D;
-    font-family: 'Proxima Nova ExtraBold';
+    font-family: 'Proxima Nova regular';
     font-size: 1.75vw;
     font-style: normal;
     font-weight: 600;
