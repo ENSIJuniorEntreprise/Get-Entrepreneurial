@@ -78,6 +78,8 @@
     line-height: normal;
     letter-spacing: 5px;
     text-align: center;
+    width:23vw;
+    /* border: 2px solid #1F212D; */
 }
 
 .time-remaining-title {
@@ -341,7 +343,7 @@
 
     }
     .parag{
-        max-width: 100%;
+        width: 70vw;
         font-size: 3vw;
         letter-spacing: 3px;
         margin-left: 11%;

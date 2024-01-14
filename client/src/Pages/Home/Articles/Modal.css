@@ -8,6 +8,11 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 3000;
   }
+
+  .ModalImg{
+     width: 80%;
+     height:auto;
+  }
   
   .modal-content {
     position: absolute;

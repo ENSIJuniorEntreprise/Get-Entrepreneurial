@@ -198,8 +198,10 @@ div:where(.swal2-icon).swal2-success [class^=swal2-success-line] {
 }
 .alert {
   padding: 10px;
-  margin-bottom: 10px;
   border-radius: 4px;
+  margin:0 auto;
+  margin-bottom: 20px;
+
 }
 .input-group .valid-feedback {
   color: #1f212dae;

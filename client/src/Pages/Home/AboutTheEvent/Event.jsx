@@ -62,7 +62,7 @@ export default function Event() {
             <img src={icon1} className="icons" />
             <div>Values</div>
           </div>
-          <div className="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div className="parag">Founded on purpose, we live by the principles of Empower, Innovate, Impact</div>
         </div>
 
         <div className="thematic">
@@ -70,7 +70,7 @@ export default function Event() {
             <img src={icon2} className="icons" />
             <div>Thematic</div>
           </div>
-          <div className="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div className="parag">Innovation and entrepreneurship for a sustainable future.</div>
         </div>
 
         <div className="info">
@@ -78,7 +78,7 @@ export default function Event() {
             <img src={icon3} className="icons" />
             <div>Information</div>
           </div>
-          <div className="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div className="parag">A Professional Event for Young Entrepreneurs, Start-ups, and Project Creators.</div>
         </div>
 
       </div> 

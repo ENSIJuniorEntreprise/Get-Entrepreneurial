@@ -119,7 +119,7 @@ function Form() {
       (Status === "Etudiant" && (!Universite || !Classe)) ||
       ((Status === "Diplome" || Status === "Employé") && (!DomaineExpertise || !NiveauExperience))
     ) {
-      setSubmitStatus({ message: 'Veuillez remplir soigneusement tous les champs obligatoires', type: 'error' });
+      setSubmitStatus({ message: 'Please fill in all mandatory fields carefully.', type: 'error' });
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
@@ -165,7 +165,7 @@ function Form() {
         setUniversite('')
         {
           Swal.fire({
-            text: "Vous êtes inscrit avec succès.",
+            text: "You have successfully registered.",
             icon: 'success',
             confirmButtonColor: '#2ea3dd',
 
@@ -179,7 +179,7 @@ function Form() {
   
     if (error.response && error.response.status === 422) {
       Swal.fire({
-        text: "Vous êtes déjà inscrit.",
+        text: "You are already registered.",
         icon: 'success',
         confirmButtonColor: '#2ea3dd',
 
@@ -212,10 +212,10 @@ function Form() {
     <div ref={myRef}>
       <div className="container03">
         <div className="container4">
-          <div className="text-centered-agenda2">Inscrivez vous</div>
+          <div className="text-centered-agenda2">Register Now</div>
           <div className="subtitle-pgm">
             <div className="line-sub-pgm"></div>
-            <div>Lorem ipsum dolor sit amet </div>
+            <div>Your Journey Begins with a Click!</div>
             <div className="line-sub-pgm"></div>
           </div>
 
@@ -231,11 +231,42 @@ function Form() {
                 <div className="NomPrenom">
 
 
+                <div className="form-group">
+                    <label htmlFor="prenom"> <div className="input-group-prepend">
+                      <span className="input-group-text">
+                        <FontAwesomeIcon icon={faUser} className="icon" />                                </span>
+                    </div>First Name</label>
+                    <div className="input-group">
+
+                      <input
+                        required
+                        id="prenom"
+                        type="text"
+                        className={`form-control ${Prenom ? 'is-valid' : 'is-invalid'}`}
+                        value={Prenom}
+                        onChange={handlePrenomChange}
+                        placeholder="Please enter your first name"
+
+                      />
+                      {Prenom && (
+                        <div className="valid-feedback">
+                          {/* Success message */}
+                        </div>
+                      )}
+                      {!Prenom && (
+                        <div className="invalid-feedback">
+                          {/* Error message */}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+
                   <div className="form-group">
                     <label htmlFor="nom"> <div className="input-group-prepend">
                       <span className="input-group-text">
                         <FontAwesomeIcon icon={faUser} className="icon" />                                </span>
-                    </div>Nom</label>
+                    </div>Last Name</label>
                     <div className="input-group">
 
                       <input
@@ -245,7 +276,7 @@ function Form() {
                         className={`form-control ${Nom ? 'is-valid' : 'is-invalid'}`}
                         value={Nom}
                         onChange={handleNomChange}
-                        placeholder="Veuillez saisir votre nom"
+                        placeholder="Please enter your last name"
                         onInvalid={(e) => e.target.setCustomValidity('Veuillez saisir votre nom')}
                         onInput={(e) => e.target.setCustomValidity('')}
                       />
@@ -264,37 +295,6 @@ function Form() {
                   </div>
 
 
-                  <div className="form-group">
-                    <label htmlFor="prenom"> <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <FontAwesomeIcon icon={faUser} className="icon" />                                </span>
-                    </div>Prénom</label>
-                    <div className="input-group">
-
-                      <input
-                        required
-                        id="prenom"
-                        type="text"
-                        className={`form-control ${Prenom ? 'is-valid' : 'is-invalid'}`}
-                        value={Prenom}
-                        onChange={handlePrenomChange}
-                        placeholder="Veuillez saisir votre prenom"
-
-                      />
-                      {Prenom && (
-                        <div className="valid-feedback">
-                          {/* Success message */}
-                        </div>
-                      )}
-                      {!Prenom && (
-                        <div className="invalid-feedback">
-                          {/* Error message */}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-
-
                 </div>
 
                 <div className="NomPrenom">
@@ -302,7 +302,7 @@ function Form() {
                     <label htmlFor="email"><div className="input-group-prepend">
                       <span className="input-group-text">
                         <FontAwesomeIcon icon={faEnvelope} className="icon" />                                </span>
-                    </div>Adresse mail</label>
+                    </div>Mail Address</label>
                     <div className="input-group">
 
                       <input
@@ -312,7 +312,7 @@ function Form() {
                         className={`form-control ${Email ? 'is-valid' : 'is-invalid'}`}
                         value={Email}
                         onChange={handleEmailChange}
-                        placeholder="Veuillez saisir votre adresse mail"
+                        placeholder="Please enter your mail address"
 
                       />
                       {Email && (
@@ -332,7 +332,7 @@ function Form() {
                     <label htmlFor="phone"><div className="input-group-prepend">
                       <span className="input-group-text">
                         <FontAwesomeIcon icon={faPhone} className="icon" />                                </span>
-                    </div>Numéro de téléphone</label>
+                    </div>Phone Number</label>
                     <div className="input-group">
 
                       <input
@@ -342,7 +342,7 @@ function Form() {
                         className={`form-control ${Phone ? 'is-valid' : 'is-invalid'}`}
                         value={Phone}
                         onChange={handlePhoneChange}
-                        placeholder="Veuillez saisir votre numéro de téléphone"
+                        placeholder="Please enter your phone Number"
 
                       />
                       {Phone && (
@@ -368,7 +368,7 @@ function Form() {
                       <span className="input-group-text">
                         <FontAwesomeIcon icon={faCalendarDays} className="icon" />
                       </span>
-                    </div>Date de naissance</label>
+                    </div>Date of birth</label>
                     <div className="input-group">
 
                       <input
@@ -399,7 +399,7 @@ function Form() {
                       <span className="input-group-text">
                         <FontAwesomeIcon icon={faVenusMars} className="icon" />
                       </span>
-                    </div>Genre</label>
+                    </div>Gender</label>
                     <div className="input-group">
 
                       <select
@@ -409,10 +409,10 @@ function Form() {
                         value={Genre}
                         onChange={handleGenreChange}
                       >
-                        <option value="" disabled>Sélectionner le genre</option>
-                        <option value="homme">Homme</option>
-                        <option value="femme">Femme</option>
-                        <option value="autre">Autre</option>
+                        <option value="" disabled>Select Gender</option>
+                        <option value="homme">Male</option>
+                        <option value="femme">Female</option>
+                        <option value="autre">other...</option>
                       </select>
                       {Genre && (
                         <div className="valid-feedback">
@@ -434,7 +434,7 @@ function Form() {
                       <span className="input-group-text">
                         <FontAwesomeIcon icon={faLocationDot} className="icon" />
                       </span>
-                    </div>Région</label>
+                    </div>Region</label>
                     <div className="input-group">
 
                       <select
@@ -444,7 +444,7 @@ function Form() {
                         value={Region}
                         onChange={handleRegionChange}
                       >
-                        <option value="" disabled>Select Région</option>
+                        <option value="" disabled>Select Region</option>
                         <option value="Ariana">Ariana</option>
                         <option value="Béja">Béja</option>
                         <option value="Ben Arous">Ben Arous</option>
@@ -504,9 +504,9 @@ function Form() {
                         onChange={handleStatusChange}
                       >
                         <option value="" disabled>Select Status</option>
-                        <option value="Etudiant">Etudiant</option>
-                        <option value="Diplomé">Jeune Diplômé</option>
-                        <option value="Employé">Employé</option>
+                        <option value="Etudiant">Student</option>
+                        <option value="Diplomé">Recent Graduate</option>
+                        <option value="Employé">Employee</option>
                       </select>
                       {Status && (
                         <div className="valid-feedback">
@@ -528,7 +528,7 @@ function Form() {
                         <span className="input-group-text">
                           <FontAwesomeIcon icon={faBuildingColumns} className="icon" />
                         </span>
-                      </div>Université</label>
+                      </div>University</label>
                       <div className="input-group">
 
                         <input
@@ -538,7 +538,7 @@ function Form() {
                           className={`form-control ${Universite ? 'is-valid' : 'is-invalid'}`}
                           value={Universite}
                           onChange={handleUniversiteChange}
-                          placeholder="Veuillez saisir votre université"
+                          placeholder="Please enter your university"
 
                         />
                         {Universite && (
@@ -560,7 +560,7 @@ function Form() {
                       <label htmlFor="classe"><div className="input-group-prepend">
                         <span className="input-group-text">
                           <FontAwesomeIcon icon={faGraduationCap} className="icon" />                                  </span>
-                      </div>Classe</label>
+                      </div>Grade</label>
                       <div className="input-group">
 
                         <select
@@ -570,12 +570,12 @@ function Form() {
                           value={Classe}
                           onChange={handleClasseChange}
                         >
-                          <option value="" disabled>Select Classe</option>
-                          <option value={1}>1ère année</option>
-                          <option value={2}>2ème année</option>
-                          <option value={3}>3ème année</option>
-                          <option value={4}>4ème année</option>
-                          <option value={5}>5ème année</option>
+                          <option value="" disabled>Select Grade</option>
+                          <option value={1}>1st year</option>
+                          <option value={2}>2nd year</option>
+                          <option value={3}>3rd year</option>
+                          <option value={4}>4th year</option>
+                          <option value={5}>5th year</option>
 
                         </select>
                         {Classe && (
@@ -598,7 +598,7 @@ function Form() {
                         <label htmlFor="domaineExpertise"><div className="input-group-prepend">
                           <span className="input-group-text">
                             <FontAwesomeIcon icon={faBriefcase} className="icon" />                                    </span>
-                        </div>Domaine d'expertise</label>
+                        </div>Expertise Field</label>
                         <div className="input-group">
 
                           <select
@@ -608,7 +608,7 @@ function Form() {
                             value={DomaineExpertise}
                             onChange={handleDomaineExpertiseChange}
                           >
-                            <option value="" disabled>Sélectionner le domaine d'expertise</option>
+                            <option value="" disabled>Select Expertise Field</option>
                             <option value="Agronomie">Agronomie</option>
                             <option value="Business">Business</option>
                             <option value="Civil">Civil</option>
@@ -649,7 +649,7 @@ function Form() {
                         <label htmlFor="niveauExperience"><div className="input-group-prepend">
                           <span className="input-group-text">
                             <FontAwesomeIcon icon={faStar} className="icon" />                                    </span>
-                        </div>Niveau d'expérience</label>
+                        </div>Experience Level</label>
                         <div className="input-group">
 
                           <select
@@ -659,9 +659,9 @@ function Form() {
                             value={NiveauExperience}
                             onChange={handleNiveauExperienceChange}
                           >
-                            <option value="" disabled>Sélectionner le niveau d'expérience</option>
+                            <option value="" disabled>Select Experience Level</option>
                             <option value="Junior">Junior</option>
-                            <option value="Intermédiaire">Intermédiaire</option>
+                            <option value="Intermédiaire">Intermediate</option>
                             <option value="Senior">Senior</option>
                           </select>
                           {NiveauExperience && (
@@ -685,7 +685,7 @@ function Form() {
                         <label htmlFor="domaineExpertise"><div className="input-group-prepend">
                           <span className="input-group-text">
                             <FontAwesomeIcon icon={faBriefcase} className="icon" />                                    </span>
-                        </div>Domaine d'expertise</label>
+                        </div>Expertise Field</label>
                         <div className="input-group">
 
                           <select
@@ -695,7 +695,7 @@ function Form() {
                             value={DomaineExpertise}
                             onChange={handleDomaineExpertiseChange}
                           >
-                            <option value="" disabled>Sélectionner le domaine d'expertise</option>
+                            <option value="" disabled>Select Expertise Field</option>
                             <option value="Agronomie">Agronomie</option>
                             <option value="Business">Business</option>
                             <option value="Civil">Civil</option>
@@ -735,7 +735,7 @@ function Form() {
                         <label htmlFor="niveauExperience"><div className="input-group-prepend">
                           <span className="input-group-text">
                             <FontAwesomeIcon icon={faStar} className="icon" />                                    </span>
-                        </div>Niveau d'expérience</label>
+                        </div>Experience Level</label>
                         <div className="input-group">
 
                           <select
@@ -745,9 +745,9 @@ function Form() {
                             value={NiveauExperience}
                             onChange={handleNiveauExperienceChange}
                           >
-                            <option value="" disabled>Sélectionner le niveau d'expérience</option>
+                            <option value="" disabled>Select Experience Level</option>
                             <option value="Junior">Junior</option>
-                            <option value="Intermédiaire">Intermédiaire</option>
+                            <option value="Intermédiaire">Intermediate</option>
                             <option value="Senior">Senior</option>
                           </select>
                           {NiveauExperience && (
@@ -771,7 +771,7 @@ function Form() {
                         <label htmlFor="domaineExpertise"><div className="input-group-prepend">
                           <span className="input-group-text">
                             <FontAwesomeIcon icon={faBriefcase} className="icon" />                                    </span>
-                        </div>Domaine d'expertise</label>
+                        </div>Expertise Field</label>
                         <div className="input-group">
 
                           <select
@@ -781,7 +781,7 @@ function Form() {
                             value={DomaineExpertise}
                             onChange={handleDomaineExpertiseChange}
                           >
-                            <option value="" disabled>Sélectionner le domaine d'expertise</option>
+                            <option value="" disabled>Select Expertise Field</option>
                             <option value="Agronomie">Agronomie</option>
                             <option value="Business">Business</option>
                             <option value="Civil">Civil</option>
@@ -821,7 +821,7 @@ function Form() {
                         <label htmlFor="niveauExperience"><div className="input-group-prepend">
                           <span className="input-group-text">
                             <FontAwesomeIcon icon={faStar} className="icon" />                                    </span>
-                        </div>Niveau d'expérience</label>
+                        </div>Experience Level</label>
                         <div className="input-group">
 
                           <select
@@ -831,9 +831,9 @@ function Form() {
                             value={NiveauExperience}
                             onChange={handleNiveauExperienceChange}
                           >
-                            <option value="" disabled>Sélectionner le niveau d'expérience</option>
+                            <option value="" disabled>Select Experience Level</option>
                             <option value="Junior">Junior</option>
-                            <option value="Intermédiaire">Intermédiaire</option>
+                            <option value="Intermédiaire">Intermediate</option>
                             <option value="Senior">Senior</option>
                           </select>
                           {NiveauExperience && (
@@ -862,7 +862,7 @@ function Form() {
                             <FontAwesomeIcon icon={faFileAlt} className="icon"/>   
                             </span>
                           </div> */}
-                    Déposez votre CV</label>
+                    Submit your CV</label>
                   <div className="input-group">
 
                     <label className="custom-file-upload">
@@ -898,7 +898,7 @@ function Form() {
                     onChange={() => setPartage(!Partage)}
                   ></input>
                   <label className="custom-control-label" htmlFor="defaultUnchecked2">
-                    J'accepte de partager mes informations avec les entreprises présentes.
+                  I agree to share my information with the participating companies.
                   </label>
                 </div>
 
@@ -928,7 +928,7 @@ function Form() {
                         type="spin"
                       />
                     ) : (
-                      "S'inscrire"
+                      "Register"
                     )}
 
                   </Button>

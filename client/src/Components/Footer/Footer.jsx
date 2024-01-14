@@ -26,22 +26,22 @@ function Footer() {
           <ul className="footer-ul">
             <li>
               <a className="footer-a" href="/">
-                Accueil
+                Home
               </a>
             </li>
             <li>
               <a className="footer-a" href="/Program">
-                Programme
+                Agenda
               </a>
             </li>
             <li>
               <a className="footer-a" href="/Collab">
-                Partenaires
+                Partners
               </a>
             </li>
             <li>
               <a className="footer-a" href="/Register">
-                Inscription
+                Registration
               </a>
             </li>
           </ul>
@@ -51,7 +51,7 @@ function Footer() {
 
 
         <div className="footer-contact lien">
-          <h3>NOUS CONTACTER</h3>
+          <h3>CONTACT US</h3>
           <div className="span">
             <span className="footer-span">22 222 222</span>
 

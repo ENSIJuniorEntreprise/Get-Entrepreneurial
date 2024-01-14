@@ -6,7 +6,7 @@ export default function Modal({ article, onClose }) {
     <div className="modal" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <span className="close-btn" onClick={onClose}>&times;</span>
-        <img src={`http://localhost:8000/Article/ArticleImg/${article.img}`} alt={article.title} />
+        <img className="ModalImg" src={`http://localhost:8000/Article/ArticleImg/${article.img}`} alt={article.title} />
         <div className="date">
       {new Date(article.date).toLocaleDateString('en-GB', {
         day: 'numeric',

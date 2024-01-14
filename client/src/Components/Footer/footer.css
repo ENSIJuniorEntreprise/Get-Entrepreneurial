@@ -161,7 +161,7 @@
     flex-direction: column;
     color: #E0DED2;
     font-weight: lighter;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 5px;
     justify-content: center;
     font-size: 15px;
@@ -171,7 +171,7 @@
 }
 
 .social {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -199,8 +199,7 @@
 }
 
 .part22 {
-    margin-left: 60%;
-    text-align: center;
+    margin-left: 50%;
     font-size: medium;
 }
 
@@ -230,7 +229,6 @@
 @media (max-width:1100px) {
     .part22 {
         margin-left: 30%;
-        text-align: center;
         font-size: medium;
     }
     .footer_container{
@@ -354,7 +352,7 @@
         height: 30px;
         white-space: nowrap;
         overflow: visible;
-        margin-left: 29vw;
+        margin-left: 35vw;
     }
 
     .part22 ul {
@@ -441,7 +439,7 @@
         height: 30px;
         white-space: nowrap;
         overflow: visible;
-        margin-left: 22vw;
+        margin-left: 31vw;
     }
 }
 
@@ -481,6 +479,7 @@
         overflow: visible;
         margin: initial;
         padding: initial;
+        margin-left: 16vw;
     }
 
     .part22 ul {
@@ -673,13 +672,21 @@
         width: 80%;
         height: 75%;
     }
+    .footer ul .footer-a {
+        font-size: 4.5vw;
+    }
+    .part22{
+        margin-left: 2.5vw;
+    }
 
 
 }
 
 
 @media (max-width:300px) {
-
+    .part22{
+        margin-left: 6vw;
+    }
     .logo-img {
         width: 80%;
     }

@@ -64,7 +64,7 @@ export default function Articles() {
       <div className="title1">FEATURED ARTICLES</div>
       <div className="subtitle1">
         <div className="line-sub"></div>
-        <div>Lorem ipsum dolor sit amet </div>
+        <div>Dive into Featured Perspectives and Stories </div>
         <div className="line-sub"></div>
       </div>
       <div className="cont">

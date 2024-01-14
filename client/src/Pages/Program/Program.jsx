@@ -18,7 +18,7 @@ function Program() {
 
                         <div className="subtitle-pgm">
                             <div className="line-sub-pgm"></div>
-                            <div>Lorem ipsum dolor sit amet </div>
+                            <div>Map to The Entrepreneurial Brilliance! </div>
                             <div className="line-sub-pgm"></div>
                         </div>
                     </div>

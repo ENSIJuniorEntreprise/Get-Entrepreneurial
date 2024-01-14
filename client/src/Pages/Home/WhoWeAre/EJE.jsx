@@ -21,7 +21,7 @@ export default function EJE() {
           <div className="title">WHO WE ARE</div>
           <div className="subtitle">
             <div className="line-sub"></div>
-            <div>Lorem ipsum dolor sit amet</div>
+            <div>Explore Our Story</div>
             <div className="line-sub"></div>
           </div>
         </div>
@@ -29,8 +29,9 @@ export default function EJE() {
 
       <div className="whoWeAre-section1">
         <div className="partie1">
-          <div><span className="orange"> Lorem ipsum dolor </span> sit amet vhgb consectetur adipisicing elit. jbb Maxime mollitia, molestiae quas vel sint commodi repudiandae bb consequuntur  hvjhvjvjhvjyyrtsrts
-            volupmolestiae quas vel sint vjvv commodi repudiandae nvgy khvj nconsequuntur voluptatum  nb v laborum. molestiae quas vel sint commodi repudiandae laborum jh consequuntur voluptatum nvhv v laborum. repudiandae nvchchc bj consequuntur voluptatum vbjvjvb laborum.
+          <div><span className="orange"> Ensi Junior Enterprise, </span> established in 2006, is a student association Affiliated with the National School of Computer Science, our mission is to introduce Tunisian students to professional life through activities focusing on three main pillars: training, events, and ICT project development.
+          <br></br>
+Additionally, we actively embrace the duty of fostering an entrepreneurial mindset in the Tunisian ecosystem, driven by our activities, especially events that enhance the link between students and businesses.
           </div>
         </div>
         <div className="part2">

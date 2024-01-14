@@ -12,7 +12,7 @@ export default function Sections() {
       <div className="title1">UNVEILING THE EXPERIENCE</div>
       <div className="subtitle11">
         <div className="line-sub"></div>
-        <div>Lorem ipsum dolor sit amet </div>
+        <div>Discover the Unseen! </div>
         <div className="line-sub"></div>
       </div>
 

@@ -22,7 +22,7 @@ export default function Header() {
           <div className="slogan">#Forge_The_Future</div>
           <div className="line"></div>
         </div>
-        <a href="/Register"><button className="subscribe">SUBSCRIBE</button></a>
+        <a href="/Register"><button className="subscribe">REGISTER {">"} </button></a>
         <img src={logo2} className="logo2" />
       </div>
     </div>

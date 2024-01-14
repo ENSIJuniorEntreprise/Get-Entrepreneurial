@@ -37,10 +37,10 @@ export default function Collab() {
         <div className="Collab-section1">
             <div className="container02">
                 <div className="container3">
-                    <div className="text-centered-agenda2">Partenaires</div>
+                    <div className="text-centered-agenda2">Our Partners</div>
                     <div className="subtitle-pgm">
                         <div className="line-sub-pgm"></div>
-                        <div>Lorem ipsum dolor sit amet </div>
+                        <div>The Art of Entrepreneurial Fusion!</div>
                         <div className="line-sub-pgm"></div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ export default function Collab() {
                 <div className="title1">Les exposants</div>
                 <div className="sous1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore,sed do eiusmod tempor incididunt ut labore,</div>
                 <div className="jobs">
-                    {alliess.map(exp => (
+                    {Exposant.map(exp => (
                         <div key={exp.id} className="exp">
                             <img src={exp.logo} alt={`exp ${exp.id}`} className="expPhoto" />
                         </div>

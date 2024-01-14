@@ -70,7 +70,7 @@ function NavBar() {
 
           }}
         >
-          Accueil{" "}
+          Home{" "}
         </div>
         
         <div
@@ -82,7 +82,7 @@ function NavBar() {
 
           }}
         >
-          Programme{" "}
+          Agenda{" "}
         </div>
 
         <div
@@ -94,7 +94,7 @@ function NavBar() {
 
           }}
         >
-          Partenaires{" "}
+          Partners{" "}
         </div>
 
         <div
@@ -106,7 +106,7 @@ function NavBar() {
 
           }}
         >
-          Inscription{" "}
+          Registration{" "}
         </div>
       </div>
 

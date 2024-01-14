@@ -65,7 +65,7 @@ export default function Allies() {
       <div className="title1">OUR VALUED ALLIES</div>
       <div className="subtitle1">
         <div className="line-sub"></div>
-        <div className="sub">Lorem ipsum dolor sit amet </div>
+        <div className="sub">Shared Visions, Shared Success </div>
         <div className="line-sub"></div>
       </div>
 
