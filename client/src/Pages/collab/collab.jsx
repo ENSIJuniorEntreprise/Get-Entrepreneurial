@@ -64,7 +64,7 @@ export default function Collab() {
                 <div className="title1">Les exposants</div>
                 <div className="sous1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore,sed do eiusmod tempor incididunt ut labore,</div>
                 <div className="jobs">
-                    {Exposant.map(exp => (
+                    {alliess.map(exp => (
                         <div key={exp.id} className="exp">
                             <img src={exp.logo} alt={`exp ${exp.id}`} className="expPhoto" />
                         </div>
