@@ -85,7 +85,7 @@ function NavBar() {
           Agenda{" "}
         </div>
 
-        <div
+        {/* <div
           className={`nav ${currentPage === "collab" ? "current-page" : ""}`}
           onClick={() => {
             navigate("/collab");
@@ -95,7 +95,7 @@ function NavBar() {
           }}
         >
           Partners{" "}
-        </div>
+        </div> */}
 
         <div
           className={`nav ${currentPage === "Register" ? "current-page" : ""}`}

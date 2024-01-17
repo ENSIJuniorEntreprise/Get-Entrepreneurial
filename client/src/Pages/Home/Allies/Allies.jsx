@@ -36,9 +36,9 @@ export default function Allies() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    speed: 200,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     autoplay: true,
     className: `testimonial-content--3 testimonial-grid`,
     responsive: [

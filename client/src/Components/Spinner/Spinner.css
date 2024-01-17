@@ -26,8 +26,8 @@
     animation: animation3 1s infinite linear; /* Adjust the duration and timing function as needed */
 }
   .dot {
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background-color: #1F212D; /* Dot color */
     position: absolute;
@@ -120,6 +120,13 @@
 }
   
 @media(max-width:600px){
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        
+      }
+
     .dot1 { transform: rotate(20deg) translate(80px) rotate(-20deg); }
     .dot2 { transform: rotate(40deg) translate(80px) rotate(-40deg); }
     .dot3 { transform: rotate(60deg) translate(80px) rotate(-60deg); }
@@ -181,8 +188,8 @@
 
 @media(max-width:340px){
     .dot {
-        width: 12px;
-        height: 12px;
+        width: 9px;
+        height: 9px;
         
       }
 

@@ -121,11 +121,6 @@ Inscr.find({}).exec()
         // Access the CV field in each document
         documents.forEach((document) => {
             const cvValue = document.CV;
-            if (cvValue !== null && cvValue !== undefined) {
-                console.log(`CV value in document: ${cvValue}`);
-            } else {
-                console.log(`CV value in document is null or undefined`);
-            }
         });
     })
     .catch((err) => {

@@ -34,11 +34,11 @@ function Footer() {
                 Agenda
               </a>
             </li>
-            <li>
+            {/* <li>
               <a className="footer-a" href="/Collab">
                 Partners
               </a>
-            </li>
+            </li> */}
             <li>
               <a className="footer-a" href="/Register">
                 Registration

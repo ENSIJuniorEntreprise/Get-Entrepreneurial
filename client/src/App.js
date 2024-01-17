@@ -48,7 +48,7 @@ function App() {
                 <Route element={<Article/>} path="/Article"/>
                 <Route element={<CollabHandler/>} path="/CollabHandler"/>
             </Route>
-          <Route element={<Collab/>} path="/Collab"/>
+          {/* <Route element={<Collab/>} path="/Collab"/> */}
           <Route path="/Register" element={<Form />} />
         </Routes>
         <Footer />
