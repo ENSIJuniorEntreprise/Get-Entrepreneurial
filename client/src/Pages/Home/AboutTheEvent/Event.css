@@ -6,12 +6,12 @@
 }
 
 .title {
-    color: #1F212D;
+    color: #1f212d;
     text-align: center;
-    font-family: 'Proxima Nova Extrabold';
+    font-family: 'Gilroy ExtraBold';
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 9px;
 }
@@ -60,8 +60,8 @@
 }
 
 .icon-title div {
-    color: #1F212D;
-    font-family: 'Proxima Nova Extrabold';
+    color: #FE9900;
+    font-family: 'Proxima Nova bold';
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
@@ -85,7 +85,7 @@
 .time-remaining-title {
 
     color: #1F212D;
-    font-family: 'Proxima Nova Extrabold';
+    font-family: 'Proxima Nova regular';
     font-size: 36px;
     font-style: normal;
     font-weight: 400;

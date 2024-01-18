@@ -1,7 +1,6 @@
 import React from "react";
 import './Sections.css';
-import img1 from "./../../../Assets/image1.png";
-import img2 from "./../../../Assets/image2.png";
+import img1 from "./../../../Assets/image44.jpg";
 import img3 from "./../../../Assets/image3.png";
 
 

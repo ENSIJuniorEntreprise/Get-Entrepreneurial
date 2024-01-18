@@ -53,7 +53,7 @@ function Footer() {
         <div className="footer-contact lien">
           <h3>CONTACT US</h3>
           <div className="span">
-            <span className="footer-span">22 222 222</span>
+            <span className="footer-span">29 903 814</span>
 
             <a href="mailto:contact.junior.ensi@gmail.com">
               <span className="footer-span mail">contact.junior.ensi@gmail.com</span>

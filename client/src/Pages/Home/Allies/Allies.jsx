@@ -37,8 +37,8 @@ export default function Allies() {
     dots: true,
     infinite: true,
     speed: 200,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     autoplay: true,
     className: `testimonial-content--3 testimonial-grid`,
     responsive: [

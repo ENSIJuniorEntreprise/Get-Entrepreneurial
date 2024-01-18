@@ -57,14 +57,13 @@
     font-family: 'Photograph Signature', sans-serif;
     margin-bottom: 0.7%;
 }
-/* Add this to your existing CSS or create a new CSS file */
 .subtitle0 {
     opacity: 0;
-    animation: fadeIn 1s forwards; /* Adjust the duration as needed */
+    animation: fadeIn 1s forwards; 
   }
   
   .line {
-    animation: growLine 2s forwards; /* Adjust the duration as needed */
+    animation: growLine 2s forwards; 
   }
   
   .slogan {
@@ -127,6 +126,7 @@
   }
 
   
+  
 @keyframes blobBounce {
     0% {
       transform: scale(1);
@@ -142,6 +142,14 @@
     justify-content: center;
     font-family: 'Proxima Nova Bold';
 }
+
+
+  .power img{
+    height:auto;
+    width: 19%;
+    margin-top: 4vw;
+    margin-left: 5vw;
+  }
 
 .icon1,
 .utica,
@@ -167,6 +175,8 @@
 .utica {
     color: #E0DED2;
 }
+
+
 
 @media (max-width:1200px) {
     .logo2 {

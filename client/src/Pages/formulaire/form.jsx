@@ -163,6 +163,7 @@ function Form() {
         setRegion('')
         setStatus('')
         setUniversite('')
+        setPartage(false);
         {
           Swal.fire({
             text: "You have successfully registered.",
@@ -199,6 +200,7 @@ function Form() {
       setRegion('')
       setStatus('')
       setUniversite('')
+      setPartage(false);
     } else {
       // For other errors
       console.error(error);
@@ -896,6 +898,7 @@ function Form() {
                     className="custom-control-input"
                     id="defaultUnchecked2"
                     onChange={() => setPartage(!Partage)}
+                    checked={Partage}
                   ></input>
                   <label className="custom-control-label" htmlFor="defaultUnchecked2">
                   I agree to share my information with the participating companies.

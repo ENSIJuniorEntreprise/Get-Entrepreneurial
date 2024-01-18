@@ -57,7 +57,7 @@ function Program() {
                         <VerticalTimelineElement
                             className="vertical-timeline-element--work"
                             contentArrowStyle={{ borderRight: "7px solid  rgb(31,33,45)" }}
-                            date="12H15 - 14H30 "
+                            date="10H00 - 14H30 "
                             iconStyle={{ background: "#9FC8D4", color: "rgb(31,33,45)" }}
                             icon={<BiAlarm />}
                         >

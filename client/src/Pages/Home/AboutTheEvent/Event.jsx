@@ -50,7 +50,7 @@ export default function Event() {
       <div className="title">ABOUT THE EVENT</div>
       <div className="subtitle">
         <div className="line-sub"></div>
-        <div>The first Junior Conference</div>
+        <div>Dive Deep into the Event</div>
         <div className="line-sub"></div>
       </div>
 

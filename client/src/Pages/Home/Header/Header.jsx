@@ -2,6 +2,7 @@ import React from "react";
 import './Header.css';
 import logo from "./../../../Assets/new.png"
 import logo2 from "./../../../Assets/logo2.png"
+import uib from "./../../../Assets/uib.png"
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Header() {
@@ -24,6 +25,9 @@ export default function Header() {
         </div>
         <a href="/Register"><button className="subscribe">REGISTER {">"} </button></a>
         <img src={logo2} className="logo2" />
+        <div className="power">
+        <img src={uib} alt="uib"></img>
+        </div>
       </div>
     </div>
   );
