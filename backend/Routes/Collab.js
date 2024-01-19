@@ -15,11 +15,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-router.use('/Uploads/CollabImg', express.static(path.join(__dirname, 'Uploads/CollabImg')));
+router.use('/Uploads/collabImg', express.static(path.join(__dirname, 'Uploads/collabImg')));
 
-router.get('/CollabImg/:filename', (req, res) => {
+router.get('/collabImg/:filename', (req, res) => {
     const filename = req.params.filename;
-    const filePath = path.join(__dirname, '../Uploads/CollabImg', filename);
+    const filePath = path.join(__dirname, '../Uploads/collabImg', filename);
     console.log('File Path:', filePath);
 
     res.sendFile(filePath, (err) => {

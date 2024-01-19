@@ -16,7 +16,7 @@ const Article = () => {
 
     useEffect(() => {
         // Fetch articles when the component mounts
-        fetch('http://localhost:8000/article')
+        fetch('/api/article')
             .then(response => response.json())
             .then(data => setArticles(data))
             .catch(error => console.error('Error fetching articles:', error));
@@ -37,7 +37,7 @@ const Article = () => {
 
     const handleDeleteArticle = (articleId) => {
         // Delete the article from the server and update the state
-        fetch(`http://localhost:8000/article/${articleId}`, {
+        fetch(`/api/article/${articleId}`, {
             method: 'DELETE',
         })
             .then(response => response.json())
@@ -52,7 +52,7 @@ const Article = () => {
         updatedData.date = new Date(updatedData.date).toISOString().split('T')[0];
 
         // Save the edited data to the server and update the state
-        fetch(`http://localhost:8000/article/${articleId}`, {
+        fetch(`/api/article/${articleId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ const Article = () => {
         formData.append('date', newArticle.date);
         formData.append('img', newArticle.imgFile); 
 
-        fetch('http://localhost:8000/article', {
+        fetch('/api/article', {
             method: 'POST',
             body: formData,
         })
@@ -118,7 +118,7 @@ const Article = () => {
                                     <td>{article.content}</td>
                                     <td>{article.date}</td>
                                     <td>
-                                        <a href={`http://localhost:8000/Article/ArticleImg/${article.img}`} target="_blank" rel="noopener noreferrer">{article.img}</a>
+                                        <a href={`/api/Article/ArticleImg/${article.img}`} target="_blank" rel="noopener noreferrer">{article.img}</a>
                                     </td>
                                     <td><button onClick={() => handleEditClick(article._id)} className="submit-button">Edit</button></td>
                                 </>

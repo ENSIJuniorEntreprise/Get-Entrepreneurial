@@ -12,7 +12,7 @@ export default function Articles() {
 
   const fetchArticles = async () => {
     try {
-      const response = await fetch("http://localhost:8000/article");
+      const response = await fetch("/api/article");
       const data = await response.json();
       setArticleData(data); 
     } catch (error) {
@@ -74,7 +74,7 @@ export default function Articles() {
         <div className="articles">
         {articleData.slice(currentSlide, currentSlide + articlesToShow).map((article, index) => (
   <div key={index} className="article">
-    <img src={`http://localhost:8000/Article/ArticleImg/${article.img}`} alt="img" />
+    <img src={`/api/Article/ArticleImg/${article.img}`} alt="img" />
     <div className="date">
       {new Date(article.date).toLocaleDateString('en-GB', {
         day: 'numeric',

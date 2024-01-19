@@ -65,13 +65,13 @@ function Footer() {
           </div>
 
           <div className="social">
-            <a className="footer-a" href="">
+            <a className="footer-a" href="https://www.facebook.com/ENSI.Junior.Entreprise">
               <FaFacebookF size={"25px"} className="icones" />
             </a>
-            <a className="footer-a" href="">
+            <a className="footer-a" href="https://www.instagram.com/ensijunior/">
               <BsInstagram size={"25px"} className="icones" />
             </a>
-            <a className="footer-a" href="">
+            <a className="footer-a" href="https://www.linkedin.com/company/ensi-junior-entreprise/">
               <BsLinkedin size={"25px"} className="icones" />
             </a>
 

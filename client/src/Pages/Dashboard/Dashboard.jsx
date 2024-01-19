@@ -7,7 +7,7 @@ function Dashboard() {
 
   useEffect(() => {
     // Fetch inscriptions from the server
-    axios.get('http://localhost:8000/inscription')
+    axios.get('/api/inscription')
       .then((response) => {
         setInscriptions(response.data);
       })
@@ -22,14 +22,14 @@ function Dashboard() {
 
     // You may want to implement a PDF viewer or open the CV in a new tab/window.
     // Example using window.open to open the CV in a new tab
-    window.open(`http://localhost:8000/inscription/CV/${filename}`, '_blank');
+    window.open(`/api/inscription/CV/${filename}`, '_blank');
   };
 
   const handleDeleteClick = (email) => {
     console.log(`Deleting entry with email: ${email}`);
     
     // You can send a request to your server to delete the entry with the specified email
-    axios.delete('http://localhost:8000/inscription/single', {
+    axios.delete('/api/inscription/single', {
       headers: {
         'Content-Type': 'application/json',
       },
