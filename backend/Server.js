@@ -17,9 +17,9 @@ app.get('/', (req, res) => {
     res.send('hello hello');
 });
 
-app.use('/inscription', require(path.join(__dirname, './Routes/inscription.js')));
-app.use('/article', require(path.join(__dirname, './Routes/article.js')));
-app.use('/collab', require(path.join(__dirname, './Routes/collab.js')));
+app.use('/api/inscription', require(path.join(__dirname, './Routes/inscription.js')));
+app.use('/api/article', require(path.join(__dirname, './Routes/article.js')));
+app.use('/api/collab', require(path.join(__dirname, './Routes/collab.js')));
 
 mongoose.connect(mongoURI, {
     serverSelectionTimeoutMS: 5000,

@@ -22,7 +22,7 @@ export default function Allies() {
     // Fetch allies from the backend when the component mounts
     const fetchAllies = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/collab");
+        const response = await axios.get("http://localhost:8000/api/collab");
         setAllies(response.data);
       } catch (error) {
         console.error("Error fetching allies:", error);
@@ -76,7 +76,7 @@ export default function Allies() {
       {ele.website && (
       <a href={`${ele.website}`} target="_blank" rel="noopener noreferrer">
       {ele.img && (
-        <img src={`http://localhost:8000/collab/collabImg/${ele.img}`} alt={`Ally ${ele.id}`} className="image" />
+        <img src={`http://localhost:8000/api/collab/collabImg/${ele.img}`} alt={`Ally ${ele.id}`} className="image" />
       )}
       </a>)}
     </div>
