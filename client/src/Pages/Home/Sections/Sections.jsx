@@ -21,7 +21,7 @@ export default function Sections() {
           <div className="part1">
             <div className="section-title"><span className="orange">BUSINESS FUSION</span></div>
             <div className="para1">
-            Welcome to Business Fusion, where commerce seamlessly merges corporate strategy with consumer dynamics. Immerse yourself in a realm where connections are forged, and the marketplace's intricate tapestry is explored. Join us in shaping the future of industry excellence through strategic enterprise integration.
+            Greetings and welcome to Business Fusion, a convergence point where corporate strategy seamlessly integrates with consumer dynamics. Immerse yourself in a professional environment where meaningful connections are forged, and the intricacies of the marketplace's tapestry are thoroughly explored. We invite you to join us in actively contributing to the shaping of the future of industry excellence through strategic enterprise integration.
             </div>
             {/* <button className="btn">Subscribe {">"}</button> */}
           </div>
@@ -48,7 +48,7 @@ export default function Sections() {
           <div className="part1">
             <div className="section-title"><span className="orange">CONFERENCE</span> <span className="orange"></span></div>
             <div className="para1">
-            Step into the Conference, a nexus of ideas and innovation. Join thought leaders converging to share insights, foster collaboration, and propel industries forward. Immerse yourself in a dynamic space where the future unfolds through vibrant discussions and collective wisdom.
+            Embark on a journey to entrepreneurial excellence and financial empowerment at our upcoming conference. Explore dynamic sessions with expert insights on entrepreneurial mindset, essential skills, and successful financing. This transformative experience also touches on Corporate Social Responsibility (RSE), enhancing discussions on entrepreneurship's positive societal impact. Join us for an enriching event to engage with thought leaders, industry experts, and peers, propelling your projects to new heights.
             </div>
           </div>
           <div className="part2">

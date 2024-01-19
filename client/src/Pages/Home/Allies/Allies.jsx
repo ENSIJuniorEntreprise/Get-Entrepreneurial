@@ -36,7 +36,7 @@ export default function Allies() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 200,
+    speed: 100,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,

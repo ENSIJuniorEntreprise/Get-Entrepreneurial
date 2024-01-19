@@ -18,7 +18,7 @@ export default function EJE() {
       <div className="EJE">
         <img src={logoo} className="logoo" />
         <div className="EJE-Title-Part">
-          <div className="title">WHO WE ARE</div>
+          <div className="title">WHO ARE WE</div>
           <div className="subtitle">
             <div className="line-sub"></div>
             <div>Explore Our Story</div>

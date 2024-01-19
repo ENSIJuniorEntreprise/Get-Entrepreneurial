@@ -24,9 +24,12 @@ export default function Header() {
           <div className="line"></div>
         </div>
         <a href="/Register"><button className="subscribe">REGISTER {">"} </button></a>
+        <div className="conttt">
         <img src={logo2} className="logo2" />
         <div className="power">
+        <div className="poweredby">Powered by </div>
         <img src={uib} alt="uib"></img>
+        </div>
         </div>
       </div>
     </div>
