@@ -40,7 +40,8 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/program" element={<Program />} />
           <Route path="/login" element={<LoginForm />} />
           <Route element={<PrivateRoute />}>
