@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes,Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Home from './Pages/Home/Home';
 import Program from './Pages/Program/Program';
@@ -40,8 +40,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/program" element={<Program />} />
           <Route path="/login" element={<LoginForm />} />
           <Route element={<PrivateRoute />}>
