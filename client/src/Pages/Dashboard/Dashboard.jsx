@@ -4,7 +4,7 @@ import './Dashboard.css'; // Import the CSS file
 
 function Dashboard() {
   const [inscriptions, setInscriptions] = useState([]);
-  const baseURL = "https://102.211.210.43:8000";
+  const baseURL = "http://102.211.210.43:8000";
 
 
   useEffect(() => {
