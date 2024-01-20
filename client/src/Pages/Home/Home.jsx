@@ -13,9 +13,9 @@ export default function Home() {
       <Header></Header>
       <Event></Event> 
       <Sections></Sections> 
-      {/* <EJE></EJE>
+      <EJE></EJE>
   <Articles></Articles> 
-   <Allies></Allies>    */}
+   <Allies></Allies>   
     </div>
   );
 }
