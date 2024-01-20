@@ -14,11 +14,13 @@ export default function Articles() {
     try {
       const response = await fetch("/api/article");
       const data = await response.json();
-      setArticleData(data); 
+      console.log("Article Data:", data); // Log the data
+      setArticleData(data);
     } catch (error) {
       console.error("Error fetching articles:", error);
     }
   };
+  
   useEffect(() => {
     fetchArticles();
   }, []); // Fetch articles when the component mounts
