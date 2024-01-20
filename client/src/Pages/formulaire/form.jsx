@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserTie, faEnvelope, faPhone, faCalendarDays, faFileAlt, faUpload, faVenusMars, faLocationDot, faUser, faBriefcase, faStar, faBuildingColumns, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 function Form() {
-  const baseURL = "http://102.211.210.43:8000/api/inscription";
+  const baseURL = "https://102.211.210.43:8000/api/inscription";
   const [loading, setLoading] = useState(false);
   const [ShowFail, setShowFail] = useState(false);
   // const [formSubmitted, setFormSubmitted] = useState(false);

@@ -9,7 +9,7 @@ export default function Articles() {
   const [articlesToShow, setArticlesToShow] = useState(3);
   const [showModal, setShowModal] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState(null);
-  const baseURL = "http://102.211.210.43:8000";
+  const baseURL = "https://102.211.210.43:8000";
 
 
 
