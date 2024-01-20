@@ -44,8 +44,8 @@ function App() {
           <Route path="/program" element={<Program />} />
           <Route path="/login" element={<LoginForm />} />
           <Route element={<PrivateRoute />}>
-                <Route element={<Dashboard/>} path="/Dash"/>
                 <Route element={<Article/>} path="/Article"/>
+                <Route element={<Dashboard/>} path="/Dash"/>
                 <Route element={<CollabHandler/>} path="/CollabHandler"/>
             </Route>
           {/* <Route element={<Collab/>} path="/Collab"/> */}
