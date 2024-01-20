@@ -5,6 +5,7 @@ import './CollabHandler.css';
 const CollabHandler = () => {
     const [collabs, setCollabs] = useState([]);
     const [editingCollabId, setEditingCollabId] = useState(null);
+    const baseURL = "http://102.211.210.43:8000";
 
     const initialNewCollabState = {
         partenaire: '',
@@ -19,7 +20,7 @@ const CollabHandler = () => {
 
     useEffect(() => {
         // Fetch collabs when the component mounts
-        fetch('/api/collab')
+        fetch(`${baseURL}/api/collab`)
             .then(response => response.json())
             .then(data => setCollabs(data))
             .catch(error => console.error('Error fetching collabs:', error));
@@ -38,7 +39,7 @@ const CollabHandler = () => {
 
     const handleDeleteCollab = (collabId) => {
         // Delete the collab from the server and update the state
-        fetch(`/api/collab/${collabId}`, {
+        fetch(`${baseURL}/api/collab/${collabId}`, {
             method: 'DELETE',
         })
             .then(response => response.json())
@@ -53,7 +54,7 @@ const CollabHandler = () => {
         // Add any additional formatting needed for your Collab data
 
         // Save the edited data to the server and update the state
-        fetch(`/api/collab/${collabId}`, {
+        fetch(`${baseURL}/api/collab/${collabId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -79,7 +80,7 @@ const CollabHandler = () => {
         formData.append('img', newCollab.imgFile);
 
         // Add a new collab to the server and update the state
-        fetch('/api/collab', {
+        fetch(`${baseURL}/api/collab`, {
             method: 'POST',
             body: formData,
         })
@@ -131,7 +132,7 @@ const CollabHandler = () => {
                                     <td><a href={`${collab.offer}`} target="_blank" rel="noopener noreferrer">{collab.offer}</a></td>
                                     <td><a href={`${collab.postuleForm}`} target="_blank" rel="noopener noreferrer">{collab.postuleForm}</a></td>
                                     <td>
-                                        <a href={`/api/Collab/CollabImg/${collab.img}`} target="_blank" rel="noopener noreferrer">{collab.img}</a>
+                                        <a href={`${baseURL}/api/Collab/CollabImg/${collab.img}`} target="_blank" rel="noopener noreferrer">{collab.img}</a>
                                     </td>
                                     <td><button onClick={() => handleEditClick(collab._id)} className="submit-button">Edit</button></td>
                                 </>

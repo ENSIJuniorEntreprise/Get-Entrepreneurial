@@ -4,10 +4,12 @@ import './Dashboard.css'; // Import the CSS file
 
 function Dashboard() {
   const [inscriptions, setInscriptions] = useState([]);
+  const baseURL = "http://102.211.210.43:8000";
+
 
   useEffect(() => {
     // Fetch inscriptions from the server
-    axios.get('/api/inscription')
+    axios.get(`${baseURL}/api/inscription`)
       .then((response) => {
         setInscriptions(response.data);
       })
@@ -22,14 +24,14 @@ function Dashboard() {
 
     // You may want to implement a PDF viewer or open the CV in a new tab/window.
     // Example using window.open to open the CV in a new tab
-    window.open(`/api/inscription/CV/${filename}`, '_blank');
+    window.open(`${baseURL}/api/inscription/CV/${filename}`, '_blank');
   };
 
   const handleDeleteClick = (email) => {
     console.log(`Deleting entry with email: ${email}`);
     
     // You can send a request to your server to delete the entry with the specified email
-    axios.delete('/api/inscription/single', {
+    axios.delete(`${baseURL}/api/inscription/single`, {
       headers: {
         'Content-Type': 'application/json',
       },

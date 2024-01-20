@@ -9,10 +9,13 @@ export default function Articles() {
   const [articlesToShow, setArticlesToShow] = useState(3);
   const [showModal, setShowModal] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState(null);
+  const baseURL = "http://102.211.210.43:8000";
+
+
 
   const fetchArticles = async () => {
     try {
-      const response = await fetch("/api/article");
+      const response = await fetch(` ${baseURL}/api/article`);
       const data = await response.json();
       console.log("Article Data:", data); // Log the data
       setArticleData(data);
@@ -76,7 +79,7 @@ export default function Articles() {
         <div className="articles">
         {articleData.slice(currentSlide, currentSlide + articlesToShow).map((article, index) => (
   <div key={index} className="article">
-    <img src={`/api/Article/ArticleImg/${article.img}`} alt="img" />
+    <img src={`${baseURL}/api/Article/ArticleImg/${article.img}`} alt="img" />
     <div className="date">
       {new Date(article.date).toLocaleDateString('en-GB', {
         day: 'numeric',
