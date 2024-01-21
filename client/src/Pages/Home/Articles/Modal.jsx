@@ -2,7 +2,7 @@ import React from "react";
 import "./Modal.css";
 
 export default function Modal({ article, onClose }) {
-  const baseURL = "https://102.211.210.43:8000";
+  const baseURL = "//102.211.210.43:8000";
 
   return (
     <div className="modal" onClick={onClose}>

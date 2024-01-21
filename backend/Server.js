@@ -1,9 +1,6 @@
-const https = require('https');
-const fs = require('fs');
-require('dotenv').config();
+require('dotenv').config(); 
 const express = require('express');
 const app = express();
-app.set('trust proxy', true);
 const morgan = require('morgan');
 const cors = require('cors');
 const path = require('path');
@@ -11,11 +8,6 @@ const mongoose = require('mongoose');
 
 const port = process.env.PORT || 8000;
 const mongoURI = process.env.MONGO_URI;
-
-const httpsOptions = {
-    key: fs.readFileSync('./cert/key.pem'),
-    cert: fs.readFileSync('./cert/cert.pem'),
-};
 
 app.use(express.json());
 app.use(cors());
@@ -26,25 +18,16 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/inscription', require(path.join(__dirname, './Routes/inscription.js')));
-app.use('/api/article', require(path.join(__dirname, './Routes/article.js')));
-app.use('/api/collab', require(path.join(__dirname, './Routes/collab.js')));
+app.use('/api/article', require(path.join(__dirname, './Routes/Article.js')));
+app.use('/api/collab', require(path.join(__dirname, './Routes/Collab.js')));
 
-// Connect to MongoDB
 mongoose.connect(mongoURI, {
     serverSelectionTimeoutMS: 5000,
-})
-.then(() => {
+}).then(() => {
     console.log('Connected to the database');
-    // Start HTTPS server
-    https.createServer(httpsOptions, app).listen(port, () => {
+    app.listen(port, () => {
         console.log(`Server is running on port ${port}`);
     });
-})
-.catch((err) => {
+}).catch((err) => {
     console.error('Error connecting to the database:', err);
-});
-
-// Error handling for HTTPS server
-process.on('unhandledRejection', (reason, promise) => {
-    console.error('Unhandled Rejection at:', reason.stack || reason);
 });
