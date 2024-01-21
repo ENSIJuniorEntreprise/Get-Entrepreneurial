@@ -3,6 +3,7 @@ const fs = require('fs');
 require('dotenv').config();
 const express = require('express');
 const app = express();
+app.set('trust proxy', true);
 const morgan = require('morgan');
 const cors = require('cors');
 const path = require('path');
