@@ -6,7 +6,7 @@ const path = require("path");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, path.join(__dirname, "../Uploads/CollabImg")); // The public folder where files will be stored
+    cb(null, path.join(__dirname, "../Uploads")); // The public folder where files will be stored
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname); // File name after upload
@@ -15,11 +15,11 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-router.use('/Uploads/collabImg', express.static(path.join(__dirname, 'Uploads/collabImg')));
+router.use('/Uploads', express.static(path.join(__dirname, 'Uploads')));
 
 router.get('/collabImg/:filename', (req, res) => {
     const filename = req.params.filename;
-    const filePath = path.join(__dirname, 'Uploads','collabImg', filename);
+    const filePath = path.join(__dirname, '../Uploads', filename);
     console.log('File Path:', filePath);
 
     res.sendFile(filePath, (err) => {

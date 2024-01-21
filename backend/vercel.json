@@ -12,10 +12,6 @@
       "dest": "/Server.js"
     },
     {
-      "src": "./Uploads/ArticleImg/(.*)",
-      "dest": "/api/Article/ArticleImg/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/Server.js"
     }
