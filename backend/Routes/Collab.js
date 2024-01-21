@@ -19,7 +19,7 @@ router.use('/Uploads/collabImg', express.static(path.join(__dirname, 'Uploads/co
 
 router.get('/collabImg/:filename', (req, res) => {
     const filename = req.params.filename;
-    const filePath = path.join(__dirname, '../Uploads/collabImg', filename);
+    const filePath = path.join(__dirname, 'Uploads','collabImg', filename);
     console.log('File Path:', filePath);
 
     res.sendFile(filePath, (err) => {
