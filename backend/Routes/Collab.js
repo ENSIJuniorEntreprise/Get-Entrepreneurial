@@ -6,7 +6,9 @@ const path = require("path");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, path.join(__dirname, "../Uploads/collabImg")); // The public folder where files will be stored
+        const destinationPath = path.join(__dirname, 'Uploads', 'collabImg');
+        console.log('Destination Path:', destinationPath);
+        cb(null, destinationPath);
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname); // File name after upload
