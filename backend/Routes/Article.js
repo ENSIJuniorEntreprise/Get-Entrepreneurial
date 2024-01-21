@@ -21,7 +21,7 @@ router.use('/Uploads/ArticleImg', express.static(path.join(__dirname, 'Uploads/A
 
 router.get('/ArticleImg/:filename', (req, res) => {
     const filename = req.params.filename;
-    const filePath = path.join(__dirname, '../Uploads/ArticleImg', filename);
+    const filePath = path.join(__dirname, '/tmp', filename);
     console.log('File Path:', filePath);
 
     res.sendFile(filePath, (err) => {
