@@ -85,7 +85,7 @@ slick-arrow slick-next{
         position: relative;
     }
     .image {
-        width: 35%;
+        width: 80%;
         height: auto;
     }
     .allies {
@@ -98,10 +98,7 @@ slick-arrow slick-next{
         height: 200px;
         position: relative;
     }
-    .image {
-        width: 50%;
-        height: auto;
-    }
+
 }
 
 @media (max-width:700px){
@@ -135,8 +132,8 @@ gap:2%;
         position: relative;
     }
     .image {
-        width: auto;
-        height: 70%;
+        width: 80%;
+        height: auto;
     }
     .allies {
         padding-top: 30px;
@@ -188,8 +185,8 @@ gap:2%;
         position: relative;
     }
     .image {
-        width: auto;
-        height: 70%;
+        width: 70%;
+        height: auto;
     }
 
 
@@ -213,8 +210,8 @@ gap:2%;
         width: 80%;
     }
     .image {
-        width: auto;
-        height: 60%;
+        width: 100%;
+        height: auto;
     }
 
 }
