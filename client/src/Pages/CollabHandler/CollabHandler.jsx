@@ -5,7 +5,7 @@ import './CollabHandler.css';
 const CollabHandler = () => {
     const [collabs, setCollabs] = useState([]);
     const [editingCollabId, setEditingCollabId] = useState(null);
-    const baseURL = "https://102.211.210.43:8000";
+    const baseURL = "https://get-entrepreneurial-sxzw.vercel.app";
 
     const initialNewCollabState = {
         partenaire: '',

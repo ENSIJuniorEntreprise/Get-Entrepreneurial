@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function Allies() {
   const [allies, setAllies] = useState([]);
-  const baseURL = "https://102.211.210.43:8000";
+  const baseURL = "https://get-entrepreneurial-sxzw.vercel.app";
 
 
   useEffect(() => {
