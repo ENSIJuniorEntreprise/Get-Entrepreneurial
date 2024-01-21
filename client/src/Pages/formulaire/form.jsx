@@ -858,25 +858,25 @@ function Form() {
 
 
                 <div className="form-group cv">
-                  <label htmlFor="cv">
+                  {/* <label htmlFor="cv"> */}
                     {/* <div className="input-group-prepend">
                             <span className="input-group-text">
                             <FontAwesomeIcon icon={faFileAlt} className="icon"/>   
                             </span>
                           </div> */}
-                    Submit your CV</label>
+                    {/* Submit your CV</label> */}
                   <div className="input-group">
 
-                    <label className="custom-file-upload">
+                    {/* <label className="custom-file-upload"> */}
                       <input
                         id="cv"
                         type="file"
                         className={`form-control ${CV ? 'is-valid' : 'is-invalid'}`}
                         onChange={handleCVChange}
                       />
-                      <FontAwesomeIcon icon={faUpload} className="icon" />
-                      Choose a file...
-                    </label>
+                      {/* <FontAwesomeIcon icon={faUpload} className="icon" /> */}
+                      {/* Choose a file... */}
+                    {/* </label> */}
                     {CV && (
                       <div className="valid-feedback">
                         {CV[0].name}

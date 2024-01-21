@@ -74,10 +74,14 @@
     line-height: normal;
     letter-spacing: 0.2vw;
     white-space: pre-line;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     overflow: hidden;
+    -webkit-line-clamp: 2;
     text-overflow: ellipsis;
     height: 3.5vw;
 }
+
 
 
 .article .date {

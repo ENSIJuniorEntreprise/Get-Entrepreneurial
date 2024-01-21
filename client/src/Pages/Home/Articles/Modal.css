@@ -42,7 +42,7 @@
   
   .modal-content .title{
     color: #E0DED2;
-    font-size: 3vw;
+    font-size: 2.25vw;
     padding-bottom: 3%;
     border-bottom:2px solid #9fc8d4 ;
     margin-bottom: 1%;
@@ -62,6 +62,7 @@
     padding-left: 5%;
     padding-top: 2%;
     padding-right: 5%;
+    white-space: pre-line; 
 
   }
 
